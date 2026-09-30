@@ -1,0 +1,1607 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Цветочная форма — план питания на месяц</title>
+<meta name="description" content="Персональный план питания на 30 дней для женщин: кето и другие диеты, рецепты, график витаминов, список покупок и трекер веса.">
+<meta name="theme-color" content="#4F9D69">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'%3E%3Cellipse rx='14' ry='30' cy='-18' fill='%234F9D69'/%3E%3Cellipse rx='14' ry='30' cy='-18' fill='%23F6C744' transform='rotate(120)'/%3E%3Cellipse rx='14' ry='30' cy='-18' fill='%235AA9E6' transform='rotate(240)'/%3E%3Ccircle r='9' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#4F9D69;--green-btn:#3C7F53;--green-soft:#E6F4EA;
+  --yellow:#F6C744;--yellow-soft:#FFF9E6;
+  --blue:#5AA9E6;--blue-soft:#E3F1FB;
+  --pink:#E88FA8;--pink-soft:#FCEAF0;
+  --ink:#23312A;--muted:#5E6E66;--surface:#FFFFFF;--bg:#FBFDF9;--line:#DCE8DF;
+  --glass:rgba(255,255,255,.8);--danger:#B64A36;--danger-soft:#FBEAE6;
+  --shadow:0 12px 32px -14px rgba(35,49,42,.22);--shadow-lg:0 22px 48px -18px rgba(35,49,42,.3);
+  --r:20px;--r-sm:14px;
+  --serif:'Playfair Display',Georgia,serif;--sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --green:#6DBE88;--green-soft:#1E3628;--yellow-soft:#2B2819;--blue-soft:#172B39;--pink-soft:#3A2129;
+    --ink:#E6EFE8;--muted:#A5B7AC;--surface:#1B2A22;--bg:#14201A;--line:#2D4035;
+    --glass:rgba(27,42,34,.84);--danger:#F0907C;--danger-soft:#3A221C;
+    --shadow:0 12px 32px -14px rgba(0,0,0,.6);--shadow-lg:0 22px 48px -18px rgba(0,0,0,.7);color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --green:#6DBE88;--green-soft:#1E3628;--yellow-soft:#2B2819;--blue-soft:#172B39;--pink-soft:#3A2129;
+  --ink:#E6EFE8;--muted:#A5B7AC;--surface:#1B2A22;--bg:#14201A;--line:#2D4035;
+  --glass:rgba(27,42,34,.84);--danger:#F0907C;--danger-soft:#3A221C;
+  --shadow:0 12px 32px -14px rgba(0,0,0,.6);--shadow-lg:0 22px 48px -18px rgba(0,0,0,.7);color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;overflow-x:hidden}
+@media(min-width:1025px){body{font-size:17px}}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.2;margin:0 0 .5em;font-weight:600}
+h1{font-size:clamp(2rem,5vw,3.4rem)}
+h2{font-size:clamp(1.6rem,3.4vw,2.4rem)}
+h3{font-size:1.25rem}
+p{margin:0 0 1em}
+a{color:var(--green-btn)}
+:root[data-theme="dark"] a{color:var(--green)}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+img,svg{max-width:100%}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:8px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+section{padding:72px 0;position:relative}
+@media(max-width:640px){section{padding:48px 0}}
+.sec-head{max-width:720px;margin-bottom:32px}
+.sec-head p{color:var(--muted)}
+.eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:10px}
+.muted{color:var(--muted)}
+.small{font-size:.875rem}
+.card{background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:22px}
+.alt{background:linear-gradient(180deg,transparent,var(--yellow-soft) 12%,var(--yellow-soft) 88%,transparent)}
+.alt-blue{background:linear-gradient(180deg,transparent,var(--blue-soft) 12%,var(--blue-soft) 88%,transparent)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 22px;border-radius:999px;border:1.5px solid transparent;font-weight:600;text-decoration:none;transition:transform .15s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn-primary{background:var(--green-btn);color:#fff;box-shadow:0 8px 20px -8px rgba(60,127,83,.6)}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 12px 24px -8px rgba(60,127,83,.7)}
+.btn-ghost{background:var(--surface);border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--green)}
+.btn-sm{min-height:36px;padding:6px 14px;font-size:.875rem}
+.btn[disabled]{opacity:.5;cursor:not-allowed;transform:none}
+.icon-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:inline-grid;place-items:center;font-size:1.1rem}
+
+/* background flowers */
+.bg-flowers{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden;color:var(--green)}
+.bg-flowers svg{position:absolute;opacity:.1}
+.bg-flowers .y{color:var(--yellow);opacity:.16}
+.bg-flowers .b{color:var(--blue);opacity:.1}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:16px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--serif);font-weight:700;font-size:1.25rem;white-space:nowrap}
+.logo svg{width:36px;height:36px}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem}
+.nav a:hover,.nav a.on{background:var(--green-soft);color:var(--ink)}
+.hdr-actions{display:flex;gap:8px;align-items:center}
+.burger{display:none}
+@media(max-width:1024px){
+  .nav{position:fixed;top:68px;left:0;right:0;flex-direction:column;background:var(--surface);padding:12px 16px 20px;border-bottom:1px solid var(--line);box-shadow:var(--shadow);transform:translateY(-120%);transition:transform .25s;margin:0}
+  .nav.open{transform:none}
+  .nav a{padding:12px 14px}
+  .burger{display:inline-grid;margin-left:auto}
+  .hdr-actions .btn-save{display:none}
+}
+.tabbar{display:none}
+@media(max-width:640px){
+  body{padding-bottom:76px}
+  .tabbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom))}
+  .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;color:var(--muted);font-size:.7rem;font-weight:600;padding:4px 0;min-height:48px;justify-content:center;border-radius:12px}
+  .tabbar a span{font-size:1.25rem;line-height:1}
+  .tabbar a.on{color:var(--green);background:var(--green-soft)}
+  .logo span{font-size:1.1rem}
+}
+
+/* hero */
+.hero{padding:56px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:540px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
+.hero-facts{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.hero-facts li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.875rem}
+.hero-art{width:100%;max-width:480px;justify-self:center}
+.petal{animation:float 7s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.petal.p2{animation-delay:-2s;animation-duration:9s}.petal.p3{animation-delay:-4s;animation-duration:8s}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-14px) rotate(12deg)}}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-art{max-width:340px;order:-1}}
+
+/* how */
+.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.how-card{position:relative}
+.how-card .num{position:absolute;top:16px;right:18px;font-family:var(--serif);font-size:2rem;color:var(--green);opacity:.35}
+.how-card .ico{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:1.6rem;background:var(--green-soft);margin-bottom:14px}
+.how-card:nth-child(2) .ico{background:var(--yellow-soft)}.how-card:nth-child(3) .ico{background:var(--blue-soft)}.how-card:nth-child(4) .ico{background:var(--pink-soft)}
+.how-card p{color:var(--muted);margin:0;font-size:.95rem}
+@media(max-width:1024px){.how-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.how-grid{grid-template-columns:1fr}}
+
+/* diet cards */
+.diet-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+@media(min-width:1025px){.diet-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:640px){
+  .diet-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:4px 16px 16px;margin:0 -16px;scrollbar-width:none}
+  .diet-grid::-webkit-scrollbar{display:none}
+  .diet-grid>*{flex:0 0 80%;scroll-snap-align:center}
+}
+.diet-card{position:relative;background:var(--surface);border:2px solid var(--line);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.diet-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+.diet-card.sel{border-color:var(--green);transform:scale(1.02);box-shadow:0 0 0 4px var(--green-soft),var(--shadow-lg)}
+.diet-card .check{position:absolute;top:12px;right:12px;width:30px;height:30px;border-radius:50%;background:var(--green-btn);color:#fff;display:grid;place-items:center;font-weight:700;opacity:0;transform:scale(.5);transition:.2s;z-index:2}
+.diet-card.sel .check{opacity:1;transform:scale(1)}
+.diet-card.locked{opacity:.5;cursor:not-allowed}
+.diet-card.locked:hover{transform:none}
+.diet-card .lock{position:absolute;top:12px;left:12px;z-index:2;background:var(--surface);border-radius:999px;padding:4px 10px;font-size:.8rem;font-weight:600}
+.dc-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.dc-body h3{margin:0;display:flex;align-items:center;gap:8px}
+.dc-body p{margin:0;color:var(--muted);font-size:.92rem}
+.dc-mac{font-size:.8rem;color:var(--muted)}
+.dc-mac b{color:var(--ink)}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.badge{font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--yellow-soft);color:var(--ink);border:1px solid color-mix(in srgb,var(--yellow) 60%,transparent)}
+.badge.fit{background:var(--green-soft);border-color:color-mix(in srgb,var(--green) 55%,transparent)}
+.badge.blue{background:var(--blue-soft);border-color:color-mix(in srgb,var(--blue) 50%,transparent)}
+.linkbtn{background:none;border:0;padding:6px 0;color:var(--green-btn);font-weight:600;text-align:left;text-decoration:underline;text-underline-offset:3px;min-height:36px}
+:root[data-theme="dark"] .linkbtn{color:var(--green)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .linkbtn,:root:not([data-theme="light"]) a{color:var(--green)}}
+.dc-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.kv{display:flex;flex-wrap:wrap;gap:6px;padding-top:6px;border-top:1px dashed var(--line)}
+.kv button{font-size:.78rem;padding:6px 10px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);min-height:32px}
+.kv button[aria-pressed="true"]{border-color:var(--green);background:var(--green-soft);font-weight:600}
+.diet-card.auto{background:linear-gradient(135deg,var(--green-soft),var(--blue-soft));justify-content:center}
+.diet-card.auto .dc-body{justify-content:center}
+.fast-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:22px}
+.fast-row .lbl{font-weight:600}
+
+/* photo placeholder */
+.ph{position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;display:grid;place-items:center;background:radial-gradient(circle at 28% 22%,hsl(var(--h) 85% 93%),hsl(var(--h) 55% 76%) 75%);isolation:isolate}
+.ph::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.14) 0 10px,transparent 10px 22px);z-index:-1}
+.ph::after{content:"🌿";position:absolute;right:8%;bottom:6%;font-size:1.4em;transform:rotate(-20deg);opacity:.9}
+.ph span{width:62%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#fff 58%,#f1f1ee 60%,#fff 66%);box-shadow:0 10px 24px -8px rgba(0,0,0,.35);display:grid;place-items:center;font-size:clamp(1.8rem,5vw,3.2rem);line-height:1}
+.diet-card .ph{border-radius:0;font-size:1rem}
+.ph.sm{width:96px;flex:0 0 96px;border-radius:14px;font-size:.6rem}
+.ph.sm span{font-size:1.9rem}
+.ph.sm::after{font-size:.9rem}
+.ph.lg span{font-size:4.5rem}
+
+/* wizard */
+.wizard{padding:0;overflow:hidden}
+.w-steps{display:flex;border-bottom:1px solid var(--line);background:var(--surface)}
+.w-steps button{flex:1;border:0;background:none;padding:14px 8px;font-weight:600;font-size:.9rem;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-bottom:3px solid transparent}
+.w-steps button b{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--green-soft);color:var(--ink);font-size:.8rem}
+.w-steps button.on{color:var(--ink);border-bottom-color:var(--green)}
+.w-steps button.on b,.w-steps button.done b{background:var(--green-btn);color:#fff}
+@media(max-width:640px){.w-steps button span{display:none}}
+.w-prog{height:4px;background:var(--line)}
+.w-prog i{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--yellow));transition:width .35s}
+.w-body{padding:26px}
+@media(max-width:640px){.w-body{padding:18px}}
+.step{display:none}
+.step.on{display:block;animation:fadeUp .35s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.w-nav{display:flex;justify-content:space-between;gap:12px;padding:18px 26px;border-top:1px solid var(--line);background:var(--surface)}
+@media(max-width:640px){.w-nav{padding:14px 18px}}
+.step1-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:26px;align-items:start}
+@media(max-width:900px){.step1-grid{grid-template-columns:1fr}}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:480px){.fields{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label,.flabel{font-weight:600;font-size:.92rem}
+.field .hint{font-size:.8rem;color:var(--muted)}
+.field .err{font-size:.8rem;color:var(--danger);font-weight:500}
+input[type=number],input[type=text],input[type=time],input[type=date],select,textarea{width:100%;min-height:44px;padding:9px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--green);outline:none;box-shadow:0 0 0 3px var(--green-soft)}
+input.bad{border-color:var(--danger)}
+textarea{min-height:64px;resize:vertical}
+.range-row{display:flex;gap:10px;align-items:center}
+.range-row input[type=number]{width:92px;flex:0 0 92px}
+input[type=range]{flex:1;accent-color:var(--green-btn);min-height:32px}
+.group{margin-top:22px}
+.group>.flabel{display:block;margin-bottom:10px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{border:1.5px solid var(--line);background:var(--surface);border-radius:14px;padding:10px 14px;min-height:44px;text-align:left;display:flex;flex-direction:column;justify-content:center;transition:.15s;font-weight:500}
+.opt small{color:var(--muted);font-size:.76rem;font-weight:400}
+.opt:hover{border-color:var(--green)}
+.opt[aria-checked="true"]{border-color:var(--green);background:var(--green-soft);font-weight:600;box-shadow:inset 0 0 0 1px var(--green)}
+.opts.cards .opt{flex:1 1 150px}
+.chip{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 14px;min-height:40px;font-size:.9rem;transition:.15s}
+.chip:hover{border-color:var(--green)}
+.chip[aria-pressed="true"]{background:var(--green-btn);border-color:var(--green-btn);color:#fff}
+.chip.warn[aria-pressed="true"]{background:var(--danger);border-color:var(--danger)}
+.safety{margin-top:22px;border:1.5px dashed color-mix(in srgb,var(--danger) 45%,var(--line));border-radius:var(--r-sm);padding:16px;background:var(--danger-soft)}
+.safety p{font-size:.9rem;margin:0 0 10px}
+
+/* calc widget */
+.calc{position:sticky;top:88px;background:linear-gradient(160deg,var(--green-soft),var(--blue-soft));border-radius:var(--r);padding:20px;border:1px solid var(--line)}
+.calc h3{font-size:1.1rem;display:flex;align-items:center;gap:8px}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat{background:var(--surface);border-radius:14px;padding:12px 14px;border:1px solid var(--line)}
+.stat span{display:block;font-size:.78rem;color:var(--muted)}
+.stat b{font-size:1.3rem;font-family:var(--serif);font-variant-numeric:tabular-nums}
+.stat small{display:block;font-size:.76rem;color:var(--muted)}
+.stat.wide{grid-column:1/-1}
+.bmi-scale{margin:16px 0 6px;position:relative;height:12px;border-radius:999px;background:linear-gradient(90deg,var(--blue) 0 14%,var(--green) 14% 40%,var(--yellow) 40% 60%,#E8986A 60% 100%)}
+.bmi-scale i{position:absolute;top:-6px;width:4px;height:24px;border-radius:4px;background:var(--ink);transform:translateX(-50%);transition:left .3s}
+.bmi-scale i.goal{background:var(--green-btn);box-shadow:0 0 0 2px var(--surface)}
+.bmi-legend{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted)}
+.note{font-size:.84rem;padding:10px 12px;border-radius:12px;background:var(--surface);border-left:4px solid var(--yellow);margin-top:10px}
+.note.err{border-left-color:var(--danger);background:var(--danger-soft)}
+.note.ok{border-left-color:var(--green)}
+.note.blue{border-left-color:var(--blue)}
+
+/* plan */
+.empty{text-align:center;padding:48px 20px}
+.empty .big{font-size:3rem}
+.plan-sum{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center}
+@media(max-width:900px){.plan-sum{grid-template-columns:1fr}}
+.donut-wrap{display:flex;align-items:center;gap:16px}
+.legend{list-style:none;margin:0;padding:0;font-size:.88rem}
+.legend li{display:flex;align-items:center;gap:8px;margin:3px 0}
+.legend i{width:12px;height:12px;border-radius:4px;display:inline-block}
+.months{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.months span{font-size:.78rem;padding:4px 10px;border-radius:999px;background:var(--blue-soft);font-variant-numeric:tabular-nums}
+.plan-actions{display:flex;flex-direction:column;gap:8px}
+@media(max-width:900px){.plan-actions{flex-direction:row;flex-wrap:wrap}}
+.dirty{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px;background:var(--yellow-soft);border:1px solid var(--yellow);border-radius:var(--r-sm);padding:12px 16px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:24px 0}
+.cal-day{position:relative;border:1.5px solid var(--line);background:var(--surface);border-radius:14px;padding:10px 10px 14px;text-align:left;display:flex;flex-direction:column;gap:2px;min-height:96px;overflow:hidden;transition:.15s}
+.cal-day:hover{border-color:var(--green)}
+.cal-day.on{border-color:var(--green);box-shadow:0 0 0 3px var(--green-soft)}
+.cal-day .dn{font-weight:700;font-size:.85rem}
+.cal-day .dd{font-size:.72rem;color:var(--muted)}
+.cal-day .em{font-size:1rem;letter-spacing:1px;margin-top:2px}
+.cal-day .dk{font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.cal-day .tag{position:absolute;top:8px;right:8px;width:8px;height:8px;border-radius:50%;background:var(--yellow)}
+.cal-day .prog{position:absolute;left:0;bottom:0;height:4px;width:calc(var(--p) * 1%);background:var(--green)}
+.cal-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
+.cal-legend i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--yellow);margin-right:6px}
+@media(max-width:640px){
+  .cal{display:flex;overflow-x:auto;scroll-snap-type:x proximity;margin:20px -16px;padding:4px 16px 10px;scrollbar-width:none}
+  .cal::-webkit-scrollbar{display:none}
+  .cal-day{flex:0 0 92px;scroll-snap-align:start}
+}
+.day-grid{display:grid;grid-template-columns:1fr 340px;gap:22px;align-items:start}
+@media(max-width:1024px){.day-grid{grid-template-columns:1fr}}
+.day-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.day-head h3{margin:0}
+.meals{display:flex;flex-direction:column;gap:12px}
+.meal{display:flex;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:12px;box-shadow:var(--shadow)}
+.meal.eaten{background:var(--green-soft)}
+.meal .mi{flex:1;min-width:0}
+.meal .slot{font-size:.78rem;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.05em}
+.meal h4{font-family:var(--sans);font-size:1.02rem;font-weight:600;margin:2px 0 4px}
+.meal .kb{font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.meal .btns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.meal .btns button{min-height:36px}
+.eat[aria-pressed="true"]{background:var(--green-btn);color:#fff;border-color:var(--green-btn)}
+@media(max-width:480px){.meal{align-items:flex-start}.ph.sm{width:78px;flex-basis:78px}}
+.side{display:flex;flex-direction:column;gap:16px}
+.side .card{padding:18px}
+.bar{margin:8px 0}
+.bar .bl{display:flex;justify-content:space-between;font-size:.84rem;font-variant-numeric:tabular-nums}
+.bar .bt{height:8px;border-radius:999px;background:var(--line);overflow:hidden;margin-top:4px}
+.bar .bt i{display:block;height:100%;border-radius:999px;background:var(--green)}
+.water{display:flex;gap:6px;flex-wrap:wrap}
+.water button{width:36px;height:40px;border-radius:10px;border:1.5px solid var(--line);background:var(--surface);font-size:1.1rem;padding:0}
+.water button.on{background:var(--blue-soft);border-color:var(--blue)}
+.tip{background:var(--yellow-soft);border:1px solid color-mix(in srgb,var(--yellow) 60%,transparent)}
+.window-bar{display:inline-flex;align-items:center;gap:8px;background:var(--blue-soft);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:500;margin-bottom:12px}
+.mini-vit{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+.mini-vit label{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;cursor:pointer}
+.mini-vit input{width:20px;height:20px;accent-color:var(--green-btn);margin-top:2px;flex:0 0 20px}
+
+/* recipes */
+.filters{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:10px;margin-bottom:12px}
+@media(max-width:900px){.filters{grid-template-columns:1fr 1fr}.filters .search{grid-column:1/-1}}
+.filters2{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;align-items:center}
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+@media(max-width:480px){.rec-grid{grid-template-columns:1fr 1fr;gap:10px}}
+.rec{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;cursor:pointer;transition:.2s;text-align:left;padding:0}
+.rec:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.rec .ph{border-radius:0}
+.rec .rb{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.rec h4{font-family:var(--sans);font-size:.98rem;font-weight:600;margin:0}
+.rec .meta{font-size:.8rem;color:var(--muted)}
+@media(max-width:480px){.rec h4{font-size:.88rem}.rec .rb{padding:10px}.rec .badges{display:none}}
+.fav{position:absolute;top:8px;right:8px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.9);font-size:1.1rem;z-index:3;display:grid;place-items:center;color:#C4546E}
+.rec-wrap{position:relative}
+.more-row{text-align:center;margin-top:20px}
+
+/* modal */
+.modal-back{position:fixed;inset:0;z-index:100;background:rgba(20,32,26,.5);display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px)}
+.modal-back.open{display:flex;animation:fadeIn .2s}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.modal{background:var(--surface);color:var(--ink);border-radius:24px;max-width:760px;width:100%;max-height:90vh;overflow:auto;position:relative;box-shadow:var(--shadow-lg);animation:pop .25s ease}
+@keyframes pop{from{transform:translateY(20px) scale(.98);opacity:0}to{transform:none;opacity:1}}
+.modal .x{position:sticky;top:12px;float:right;margin:12px 12px 0 0;z-index:5}
+.m-body{padding:24px}
+.m-body h2{font-size:1.7rem}
+.m-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:640px){
+  .modal-back{align-items:flex-end;padding:0}
+  .modal{border-radius:24px 24px 0 0;max-height:92vh;animation:sheet .3s ease}
+  .m-cols{grid-template-columns:1fr}
+  .m-body{padding:18px}
+}
+@keyframes sheet{from{transform:translateY(100%)}to{transform:none}}
+.m-sec{margin-top:18px}
+.m-sec h4{font-family:var(--sans);font-size:1rem;font-weight:700;margin-bottom:6px}
+.ing{list-style:none;padding:0;margin:0}
+.ing li{border-bottom:1px dashed var(--line)}
+.ing label{display:flex;gap:10px;align-items:center;padding:8px 0;cursor:pointer}
+.ing input{width:20px;height:20px;accent-color:var(--green-btn)}
+.ing input:checked+span{text-decoration:line-through;color:var(--muted)}
+.ing .q{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;position:relative;padding:10px 0 10px 46px;border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(s);position:absolute;left:0;top:10px;width:32px;height:32px;border-radius:50%;background:var(--green-soft);display:grid;place-items:center;font-weight:700;color:var(--ink)}
+.kbju{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.kbju div{background:var(--green-soft);border-radius:12px;padding:8px;text-align:center}
+.kbju div:nth-child(2){background:var(--green-soft)}.kbju div:nth-child(3){background:var(--yellow-soft)}.kbju div:nth-child(4){background:var(--blue-soft)}
+.kbju b{display:block;font-size:1.1rem;font-variant-numeric:tabular-nums}
+.kbju small{font-size:.72rem;color:var(--muted)}
+.stepper{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);border-radius:999px;padding:3px}
+.stepper button{width:36px;height:36px;border-radius:50%;border:0;background:var(--green-soft);font-weight:700;font-size:1.1rem}
+.stepper b{min-width:28px;text-align:center}
+.modal.cooking .steps li{font-size:1.35rem;line-height:1.5;padding:16px 0 16px 56px}
+.modal.cooking .steps li::before{width:40px;height:40px}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px}
+.prod{border-radius:14px;padding:10px 6px;text-align:center;font-size:.8rem;background:var(--green-soft)}
+.prod span{display:block;font-size:1.6rem}
+.prod.no{background:var(--danger-soft)}
+.alts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:640px){.alts{grid-template-columns:1fr}}
+.alt-card{border:1.5px solid var(--line);border-radius:16px;padding:10px;display:flex;flex-direction:column;gap:6px}
+.alt-card h4{font-family:var(--sans);font-size:.95rem;margin:4px 0 0}
+
+/* vitamins */
+.disclaimer{display:flex;gap:12px;align-items:flex-start;background:var(--yellow-soft);border:1px solid color-mix(in srgb,var(--yellow) 60%,transparent);border-radius:var(--r-sm);padding:14px 16px;font-size:.92rem;margin-bottom:20px}
+.disclaimer b{font-size:1.3rem;line-height:1}
+.timeline{position:relative;height:96px;margin:28px 8px 18px}
+.timeline .line{position:absolute;left:0;right:0;top:46px;height:6px;border-radius:999px;background:linear-gradient(90deg,var(--yellow),var(--green) 50%,var(--blue))}
+.timeline .win{position:absolute;top:40px;height:18px;border-radius:999px;background:color-mix(in srgb,var(--green) 25%,transparent);border:1.5px dashed var(--green)}
+.tl-pt{position:absolute;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;font-size:.7rem;white-space:nowrap;color:var(--muted);font-variant-numeric:tabular-nums}
+.tl-pt.meal{top:0}
+.tl-pt.meal i{font-style:normal;font-size:1.1rem}
+.tl-pt.vit{top:60px}
+.tl-pt.vit i{width:14px;height:14px;border-radius:50%;border:2px solid var(--surface);box-shadow:0 0 0 1px var(--line)}
+.tl-end{position:absolute;top:64px;font-size:.72rem;color:var(--muted)}
+.vit-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.vit{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow);border-top:5px solid var(--c)}
+.vit.off{opacity:.55}
+.vit .vh{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.vit h4{font-family:var(--sans);font-size:1rem;margin:0}
+.vit .dose{font-weight:700;font-size:.95rem}
+.vit .when{display:flex;flex-wrap:wrap;gap:6px}
+.vit .when span{font-size:.78rem;padding:3px 10px;border-radius:999px;background:var(--blue-soft);font-variant-numeric:tabular-nums}
+.vit p{margin:0;font-size:.86rem;color:var(--muted)}
+.vit .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto;padding-top:6px}
+.vit label.tk{display:flex;align-items:center;gap:8px;font-weight:600;font-size:.9rem;cursor:pointer}
+.vit label.tk input{width:22px;height:22px;accent-color:var(--green-btn)}
+.switch{position:relative;width:44px;height:26px;border-radius:999px;border:0;background:var(--line);padding:0;flex:0 0 44px}
+.switch::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.switch[aria-checked="true"]{background:var(--green-btn)}
+.switch[aria-checked="true"]::after{left:21px}
+.rules{columns:2;column-gap:28px;font-size:.9rem;padding-left:18px}
+@media(max-width:700px){.rules{columns:1}}
+.rules li{margin-bottom:6px;break-inside:avoid}
+.custom-form{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:10px;align-items:end}
+@media(max-width:700px){.custom-form{grid-template-columns:1fr 1fr}}
+.vit-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ring{display:flex;align-items:center;gap:10px;font-weight:600}
+
+/* shopping */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.tabs button{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 16px;min-height:40px;font-weight:600}
+.tabs button[aria-selected="true"]{background:var(--green-btn);color:#fff;border-color:var(--green-btn)}
+.shop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.shop-cat h4{font-family:var(--sans);font-size:1rem;display:flex;justify-content:space-between}
+.shop-cat ul{list-style:none;padding:0;margin:0}
+.shop-cat li{border-bottom:1px dashed var(--line)}
+.shop-cat label{display:flex;gap:10px;align-items:center;padding:8px 0;cursor:pointer;font-size:.93rem}
+.shop-cat input{width:20px;height:20px;accent-color:var(--green-btn);flex:0 0 20px}
+.shop-cat input:checked+span{text-decoration:line-through;color:var(--muted)}
+.shop-cat .q{margin-left:auto;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.shop-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+
+/* progress */
+.prog-grid{display:grid;grid-template-columns:320px 1fr;gap:20px;align-items:start}
+@media(max-width:900px){.prog-grid{grid-template-columns:1fr}}
+.w-form{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:end}
+.w-form .btn{grid-column:1/-1}
+.stats4{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.chart svg{width:100%;height:auto;display:block}
+.chart text{fill:var(--muted);font-size:11px;font-family:var(--sans)}
+.wlog{list-style:none;padding:0;margin:12px 0 0;font-size:.88rem;max-height:220px;overflow:auto}
+.wlog li{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px dashed var(--line);font-variant-numeric:tabular-nums}
+.wlog button{border:0;background:none;color:var(--muted);min-height:32px;min-width:32px}
+
+/* faq */
+.faq{max-width:820px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-bottom:10px;overflow:hidden}
+.faq summary{padding:16px 20px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--green);transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 20px 16px;margin:0;color:var(--muted)}
+
+/* footer */
+footer{border-top:1px solid var(--line);background:var(--surface);padding:40px 0 32px;margin-top:40px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px}
+@media(max-width:800px){.foot-grid{grid-template-columns:1fr}}
+footer p,footer li{font-size:.88rem;color:var(--muted)}
+footer ul{list-style:none;padding:0;margin:0}
+footer ul li{margin-bottom:6px}
+.med{background:var(--yellow-soft);border-radius:14px;padding:14px;font-size:.88rem}
+
+/* toast, confetti, reveal */
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:14px;font-size:.92rem;z-index:200;opacity:0;pointer-events:none;transition:.25s;max-width:calc(100% - 32px);box-shadow:var(--shadow-lg)}
+.toast.show{opacity:1;transform:translateX(-50%)}
+@media(max-width:640px){.toast{bottom:92px}}
+.confetti{position:fixed;top:-40px;z-index:300;pointer-events:none;font-size:1.4rem;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:.2}}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#printArea{display:none}
+@media print{
+  body{background:#fff;color:#000;padding:0}
+  body>*:not(#printArea){display:none!important}
+  #printArea{display:block;font-size:11pt}
+  #printArea h1{font-size:20pt}#printArea h2{font-size:14pt;margin-top:18pt}
+  #printArea table{width:100%;border-collapse:collapse;margin-bottom:10pt}
+  #printArea td,#printArea th{border:1px solid #bbb;padding:4pt 6pt;text-align:left;vertical-align:top}
+  #printArea .pb{page-break-before:always}
+}
+</style>
+</head>
+<body>
+<noscript><p style="padding:16px;background:#FFF9E6">Для работы сайта включите JavaScript.</p></noscript>
+
+<!-- SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="daisy" viewBox="-50 -50 100 100">
+      <g fill="none" stroke="currentColor" stroke-width="2.2">
+        <ellipse rx="9" ry="21" cy="-24"/><ellipse rx="9" ry="21" cy="-24" transform="rotate(45)"/>
+        <ellipse rx="9" ry="21" cy="-24" transform="rotate(90)"/><ellipse rx="9" ry="21" cy="-24" transform="rotate(135)"/>
+        <ellipse rx="9" ry="21" cy="-24" transform="rotate(180)"/><ellipse rx="9" ry="21" cy="-24" transform="rotate(225)"/>
+        <ellipse rx="9" ry="21" cy="-24" transform="rotate(270)"/><ellipse rx="9" ry="21" cy="-24" transform="rotate(315)"/>
+      </g>
+      <circle r="8" fill="none" stroke="currentColor" stroke-width="2.2"/>
+    </symbol>
+    <symbol id="leaf" viewBox="-30 -60 60 120">
+      <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+        <path d="M0 55 V-55"/>
+        <path d="M0 -40 C-18 -46 -22 -30 -2 -26"/><path d="M0 -40 C18 -46 22 -30 2 -26"/>
+        <path d="M0 -12 C-20 -18 -24 0 -2 4"/><path d="M0 -12 C20 -18 24 0 2 4"/>
+        <path d="M0 16 C-20 10 -24 28 -2 32"/><path d="M0 16 C20 10 24 28 2 32"/>
+      </g>
+    </symbol>
+    <symbol id="logo" viewBox="-50 -50 100 100">
+      <ellipse rx="15" ry="28" cy="-19" fill="#4F9D69"/>
+      <ellipse rx="15" ry="28" cy="-19" fill="#F6C744" transform="rotate(120)"/>
+      <ellipse rx="15" ry="28" cy="-19" fill="#5AA9E6" transform="rotate(240)"/>
+      <circle r="9" fill="#fff"/><circle r="4.5" fill="#F6C744"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="bg-flowers" aria-hidden="true">
+  <svg style="top:6%;left:-40px;width:180px"><use href="#daisy"/></svg>
+  <svg class="y" style="top:30%;right:-30px;width:150px"><use href="#daisy"/></svg>
+  <svg style="top:55%;left:3%;width:70px;height:140px"><use href="#leaf"/></svg>
+  <svg class="b" style="bottom:8%;right:6%;width:120px"><use href="#daisy"/></svg>
+  <svg style="bottom:-30px;left:40%;width:90px;height:180px;transform:rotate(30deg)"><use href="#leaf"/></svg>
+  <svg class="y" style="top:12%;left:48%;width:60px"><use href="#daisy"/></svg>
+</div>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Цветочная форма — на главную"><svg aria-hidden="true"><use href="#logo"/></svg><span>Цветочная форма</span></a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#diets">Диеты</a><a href="#plan">Мой план</a><a href="#recipes">Рецепты</a>
+      <a href="#vitamins">Витамины</a><a href="#shop">Покупки</a><a href="#progress">Прогресс</a>
+    </nav>
+    <div class="hdr-actions">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Сменить тему" title="Тема">🌓</button>
+      <button class="btn btn-primary btn-sm btn-save" id="loginBtn" type="button">Войти / Сохранить план</button>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">🌸 План питания на 30 дней</span>
+      <h1>Ваш план питания на месяц — легко и со вкусом</h1>
+      <p class="lead">Подберём диету под ваши параметры, вкусы и ритм жизни: меню с рецептами, график витаминов, список покупок и трекер веса. Меньше трёх минут — и план готов.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#wizard" data-start>Составить мой план</a>
+        <a class="btn btn-ghost" href="#diets">Посмотреть диеты</a>
+      </div>
+      <ul class="hero-facts">
+        <li>✓ Не ниже 1200 ккал</li><li>✓ 7 диет, включая кето</li><li>✓ Работает на телефоне</li>
+      </ul>
+    </div>
+    <svg class="hero-art" viewBox="0 0 440 400" role="img" aria-label="Тарелка с полезными блюдами в окружении цветов">
+      <circle cx="220" cy="205" r="175" fill="var(--green-soft)"/>
+      <circle cx="330" cy="90" r="60" fill="var(--yellow-soft)"/>
+      <circle cx="95" cy="320" r="48" fill="var(--blue-soft)"/>
+      <g color="var(--green)" opacity=".55"><use href="#leaf" x="20" y="120" width="70" height="140" transform="rotate(-25 55 190)"/><use href="#leaf" x="350" y="230" width="60" height="120" transform="rotate(30 380 290)"/></g>
+      <circle cx="220" cy="210" r="118" fill="var(--surface)" style="filter:drop-shadow(0 14px 22px rgba(35,49,42,.22))"/>
+      <circle cx="220" cy="210" r="94" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <text x="220" y="195" font-size="64" text-anchor="middle">🥗</text>
+      <text x="170" y="262" font-size="40" text-anchor="middle">🥑</text>
+      <text x="268" y="262" font-size="40" text-anchor="middle">🍓</text>
+      <text x="222" y="287" font-size="30" text-anchor="middle">🥚</text>
+      <g color="var(--yellow)" class="petal"><use href="#daisy" x="300" y="40" width="80" height="80"/></g>
+      <g color="var(--green)" class="petal p2"><use href="#daisy" x="40" y="40" width="64" height="64"/></g>
+      <g color="var(--blue)" class="petal p3"><use href="#daisy" x="330" y="310" width="56" height="56"/></g>
+      <g class="petal p2"><ellipse cx="120" cy="120" rx="7" ry="13" fill="var(--pink)" opacity=".6" transform="rotate(30 120 120)"/></g>
+      <g class="petal"><ellipse cx="370" cy="200" rx="6" ry="12" fill="var(--yellow)" opacity=".8"/></g>
+      <g class="petal p3"><ellipse cx="60" cy="250" rx="6" ry="11" fill="var(--green)" opacity=".5" transform="rotate(-20 60 250)"/></g>
+    </svg>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Как это работает</span><h2>Четыре шага до вашего плана</h2></div>
+    <div class="how-grid">
+      <div class="card how-card reveal"><span class="num">1</span><div class="ico">📏</div><h3>Параметры и цель</h3><p>Возраст, рост, вес и сколько килограммов хотите сбросить — срок и калории считаются сразу.</p></div>
+      <div class="card how-card reveal"><span class="num">2</span><div class="ico">🥑</div><h3>Выбор диеты</h3><p>Кето, средиземноморская, low-carb и другие. Или доверьте выбор нам.</p></div>
+      <div class="card how-card reveal"><span class="num">3</span><div class="ico">🍽️</div><h3>Вкусы и ритм</h3><p>Исключения, аллергии, любимые кухни, время на готовку и бюджет.</p></div>
+      <div class="card how-card reveal"><span class="num">4</span><div class="ico">🌸</div><h3>Готовый план</h3><p>Меню на 30 дней, рецепты, витамины по часам, список покупок и трекер веса.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIETS -->
+<section id="diets" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Каталог диет</span><h2>Выберите подход, который вам по душе</h2><p>Нажмите на карточку, чтобы выбрать диету. «Подробнее» — принципы, продукты и пример дня.</p></div>
+    <div class="diet-grid" id="dietGrid" role="radiogroup" aria-label="Диета"></div>
+    <div class="fast-row" id="fastRow1"></div>
+  </div>
+</section>
+
+<!-- WIZARD -->
+<section id="wizard">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Анкета</span><h2>Составим план под вас</h2><p>Ответы сохраняются автоматически — можно вернуться и изменить их в любой момент.</p></div>
+    <div class="card wizard">
+      <div class="w-steps" id="wSteps" role="tablist" aria-label="Шаги анкеты">
+        <button type="button" data-step="1"><b>1</b><span>Параметры</span></button>
+        <button type="button" data-step="2"><b>2</b><span>Диета</span></button>
+        <button type="button" data-step="3"><b>3</b><span>Питание</span></button>
+        <button type="button" data-step="4"><b>4</b><span>Образ жизни</span></button>
+      </div>
+      <div class="w-prog"><i id="wProg"></i></div>
+      <div class="w-body">
+        <!-- step 1 -->
+        <div class="step" data-panel="1">
+          <div class="step1-grid">
+            <div>
+              <div class="fields">
+                <div class="field full"><label for="age">Возраст, лет</label><div class="range-row"><input type="range" id="ageR" min="18" max="65" aria-label="Возраст, ползунок"><input type="number" id="age" min="18" max="65" inputmode="numeric"></div></div>
+                <div class="field full"><label for="height">Рост, см</label><div class="range-row"><input type="range" id="heightR" min="140" max="200" aria-label="Рост, ползунок"><input type="number" id="height" min="140" max="200" inputmode="numeric"></div></div>
+                <div class="field"><label for="weight">Текущий вес, кг</label><input type="number" id="weight" min="40" max="200" step="0.1" inputmode="decimal"><span class="hint">40–200 кг</span></div>
+                <div class="field" id="kgField"><label for="kg">Сколько кг хотите сбросить</label><input type="number" id="kg" min="1" step="0.5" inputmode="decimal"><span class="hint" id="kgHint"></span></div>
+                <div class="field" id="goalWField"><label for="goalW">Желаемый вес, кг</label><input type="number" id="goalW" step="0.5" inputmode="decimal"><span class="hint">Рассчитывается автоматически — можно изменить</span></div>
+              </div>
+              <div class="group"><span class="flabel" id="actL">Уровень активности</span><div class="opts cards" id="actOpts" role="radiogroup" aria-labelledby="actL"></div></div>
+              <div class="group"><span class="flabel" id="goalL">Цель</span><div class="opts" id="goalOpts" role="radiogroup" aria-labelledby="goalL"></div></div>
+              <div class="group" id="paceGroup"><span class="flabel" id="paceL">Темп снижения</span><div class="opts" id="paceOpts" role="radiogroup" aria-labelledby="paceL"></div></div>
+              <div class="safety">
+                <span class="flabel">Безопасность: отметьте, если что-то относится к вам</span>
+                <p class="muted">При любой отметке кето и интервальное голодание будут недоступны, а вместо графика витаминов — рекомендация обратиться к врачу.</p>
+                <div class="opts" id="healthChips"></div>
+              </div>
+            </div>
+            <aside class="calc" id="calcBox" aria-live="polite"></aside>
+          </div>
+        </div>
+        <!-- step 2 -->
+        <div class="step" data-panel="2">
+          <h3>Выберите диету</h3>
+          <p class="muted">Карточка с меткой «Подходит вам» — наша рекомендация по вашим ответам.</p>
+          <div class="diet-grid" id="dietGrid2" role="radiogroup" aria-label="Диета"></div>
+          <div class="fast-row" id="fastRow2"></div>
+        </div>
+        <!-- step 3 -->
+        <div class="step" data-panel="3">
+          <div class="group" style="margin-top:0"><span class="flabel">Не ем / исключить</span><div class="opts" id="exclChips"></div></div>
+          <div class="field group"><label for="freeExcl">Другие продукты, которые не едите (через запятую)</label><textarea id="freeExcl" placeholder="Например: кабачок, лосось"></textarea></div>
+          <div class="group"><span class="flabel">Аллергии — исключаются строго</span><div class="opts" id="allergyChips"></div></div>
+          <div class="group"><span class="flabel">Любимые кухни</span><div class="opts" id="cuisineChips"></div></div>
+          <div class="group"><span class="flabel" id="sweetL">Сладкое</span><div class="opts" id="sweetOpts" role="radiogroup" aria-labelledby="sweetL"></div></div>
+        </div>
+        <!-- step 4 -->
+        <div class="step" data-panel="4">
+          <div class="group" style="margin-top:0"><span class="flabel" id="mealsL">Приёмов пищи в день</span><div class="opts" id="mealOpts" role="radiogroup" aria-labelledby="mealsL"></div></div>
+          <div class="group"><span class="flabel" id="cookL">Время на готовку</span><div class="opts" id="cookOpts" role="radiogroup" aria-labelledby="cookL"></div></div>
+          <div class="group"><span class="flabel" id="batchL">Готовлю на несколько дней</span><div class="opts" id="batchOpts" role="radiogroup" aria-labelledby="batchL"></div></div>
+          <div class="group"><span class="flabel" id="budL">Бюджет</span><div class="opts" id="budgetOpts" role="radiogroup" aria-labelledby="budL"></div></div>
+          <div class="group"><span class="flabel" id="servL">Готовлю на человек (для списка покупок)</span><div class="opts" id="servOpts" role="radiogroup" aria-labelledby="servL"></div></div>
+          <div class="fields group">
+            <div class="field"><label for="wake">Подъём</label><input type="time" id="wake"></div>
+            <div class="field"><label for="sleep">Отход ко сну</label><input type="time" id="sleep"></div>
+          </div>
+          <div class="note blue" style="margin-top:20px">Сайт носит информационный характер и не заменяет консультацию врача. Перед началом диеты, особенно кетогенной, и приёмом БАДов проконсультируйтесь со специалистом.</div>
+        </div>
+      </div>
+      <div class="w-nav">
+        <button class="btn btn-ghost" type="button" id="wPrev">← Назад</button>
+        <button class="btn btn-primary" type="button" id="wNext">Далее →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section id="plan" class="alt-blue">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Мой план</span><h2>Меню на 30 дней</h2><p>Нажмите на день в календаре, чтобы увидеть блюда, витамины и советы.</p></div>
+    <div id="planBox"></div>
+  </div>
+</section>
+
+<!-- RECIPES -->
+<section id="recipes">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Рецепты</span><h2>Галерея блюд</h2><p>Фильтруйте по диете, приёму пищи и времени. Сердечко — добавить в избранное.</p></div>
+    <div class="filters">
+      <input class="search" type="text" id="rSearch" placeholder="🔍 Поиск: название или продукт" aria-label="Поиск рецептов">
+      <select id="rDiet" aria-label="Диета"></select>
+      <select id="rMeal" aria-label="Приём пищи"><option value="">Любой приём пищи</option><option value="b">Завтрак</option><option value="l">Обед</option><option value="d">Ужин</option><option value="s">Перекус / десерт</option></select>
+      <select id="rTime" aria-label="Время"><option value="">Любое время</option><option value="15">до 15 минут</option><option value="30">до 30 минут</option></select>
+      <select id="rCuisine" aria-label="Кухня"></select>
+    </div>
+    <div class="filters2">
+      <button class="chip" type="button" id="rFav" aria-pressed="false">❤ Только избранное</button>
+      <button class="chip" type="button" id="rMine" aria-pressed="false">Учитывать мои исключения</button>
+      <span class="muted small" id="rCount"></span>
+    </div>
+    <div class="rec-grid" id="recGrid"></div>
+    <div class="more-row"><button class="btn btn-ghost" type="button" id="rMore">Показать ещё</button></div>
+  </div>
+</section>
+
+<!-- VITAMINS -->
+<section id="vitamins" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Витамины и БАДы</span><h2>Персональный график приёма</h2><p>Подбирается автоматически по диете, исключённым продуктам, возрасту и меню дня.</p></div>
+    <div class="disclaimer" role="note"><b>⚠️</b><div>Дозировки ориентировочные для здоровой взрослой женщины. Перед началом приёма проконсультируйтесь с врачом и по возможности сдайте анализы.</div></div>
+    <div id="vitBox"></div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Список покупок</span><h2>Всё для недели — в одном списке</h2><p>Ингредиенты суммируются за неделю и масштабируются на число порций.</p></div>
+    <div id="shopBox"></div>
+  </div>
+</section>
+
+<!-- PROGRESS -->
+<section id="progress" class="alt-blue">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Прогресс</span><h2>Трекер веса</h2><p>Взвешивайтесь 1–2 раза в неделю утром натощак — так динамика честнее.</p></div>
+    <div id="progBox"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Вопросы</span><h2>Частые вопросы</h2></div>
+    <div class="faq" id="faqBox"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <a class="logo" href="#top"><svg aria-hidden="true"><use href="#logo"/></svg><span>Цветочная форма</span></a>
+      <p class="med" style="margin-top:14px"><b>Медицинский дисклеймер.</b> Сайт носит информационный характер и не заменяет консультацию врача. Перед началом диеты, особенно кетогенной, и приёмом БАДов проконсультируйтесь со специалистом.</p>
+    </div>
+    <div>
+      <h4>Разделы</h4>
+      <ul><li><a href="#diets">Диеты</a></li><li><a href="#plan">Мой план</a></li><li><a href="#recipes">Рецепты</a></li><li><a href="#vitamins">Витамины</a></li><li><a href="#faq">FAQ</a></li></ul>
+    </div>
+    <div>
+      <h4>Данные и контакты</h4>
+      <ul>
+        <li><button class="linkbtn" type="button" id="privacyBtn">Политика конфиденциальности</button></li>
+        <li><button class="linkbtn" type="button" id="wipeBtn">Удалить мои данные</button></li>
+        <li>Email: hello@example.com</li>
+      </ul>
+      <p style="margin-top:10px">© 2026 «Цветочная форма». Изображения блюд — иллюстрации-заглушки.</p>
+    </div>
+  </div>
+</footer>
+
+<nav class="tabbar" aria-label="Быстрая навигация">
+  <a href="#diets"><span>🌿</span>Диеты</a><a href="#plan"><span>📅</span>План</a><a href="#recipes"><span>🍽️</span>Рецепты</a><a href="#vitamins"><span>💊</span>Витамины</a><a href="#progress"><span>📈</span>Прогресс</a>
+</nav>
+
+<div class="modal-back" id="modalBack" aria-hidden="true">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="icon-btn x" type="button" id="mClose" aria-label="Закрыть">✕</button>
+    <div id="mContent"></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div id="printArea"></div>
+
+<script>
+'use strict';
+/* ---------- helpers ---------- */
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+const r1=v=>Math.round(v*10)/10;
+const fmt=n=>Math.round(n).toLocaleString('ru-RU');
+const dec=v=>String(r1(v)).replace('.',',');
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const toMin=s=>{const[a,b]=(s||'07:00').split(':').map(Number);return (a||0)*60+(b||0)};
+const toHM=m=>{m=((Math.round(m)%1440)+1440)%1440;return String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')};
+const pad=n=>String(n).padStart(2,'0');
+const isoOf=dt=>dt.getFullYear()+'-'+pad(dt.getMonth()+1)+'-'+pad(dt.getDate());
+const todayISO=()=>isoOf(new Date());
+const addDays=(iso,n)=>{const [y,m,d]=iso.split('-').map(Number);return new Date(y,m-1,d+n)};
+const dShort=dt=>dt.toLocaleDateString('ru-RU',{day:'numeric',month:'short'});
+const dLong=dt=>dt.toLocaleDateString('ru-RU',{weekday:'long',day:'numeric',month:'long'});
+
+/* ---------- recipes DB ---------- */
+const CAT={v:'Овощи и зелень',f:'Фрукты и ягоды',m:'Мясо и птица',r:'Рыба и морепродукты',e:'Молочное и яйца',b:'Бакалея и крупы',n:'Орехи и семена',o:'Масла, соусы, специи'};
+const CUIS={kz:'Казахская',eu:'Европейская',as:'Азиатская',med:'Средиземноморская'};
+const RECIPES=[],RX={};
+function R(id,t,m,d,cu,tm,bu,n,em,h,x,ing,st,sw){
+  const [kcal,p,f,c,fib,ca]=n;
+  const r={id,t,m:m.split(''),d:d.split(''),cu,tm,bu,kcal,p,f,c,fib,net:Math.max(0,c-fib),ca,em,h,x:x?x.split(' '):[],
+    ing:ing.split(';').map(s=>{const[a,q,u,k]=s.split('|');return{n:a,q:+q,u,cat:k}}),st:st.split(';'),sw:!!sw};
+  RECIPES.push(r);RX[id]=r;
+}
+// breakfasts
+R('omelet-spinach','Омлет со шпинатом и фетой','b','KLH','eu',10,'e',[380,24,29,5,2,290],'🍳',48,'eggs dairy','Яйца|3|шт|e;Шпинат свежий|50|г|v;Фета|30|г|e;Сливочное масло|10|г|e','Взбейте яйца со щепоткой соли.;Обжарьте шпинат на масле 1 минуту.;Залейте яйцами, посыпьте фетой и готовьте под крышкой 4–5 минут.');
+R('chia-coco','Чиа-пудинг на кокосовом молоке','bs','KLM','eu',5,'m',[320,8,26,14,11,250],'🥥',200,'','Семена чиа|30|г|n;Кокосовое молоко|150|мл|b;Ягоды замороженные|40|г|f','Смешайте чиа с кокосовым молоком.;Оставьте в холодильнике минимум на 4 часа (удобно — на ночь).;Перед подачей добавьте ягоды.',1);
+R('avocado-eggs','Авокадо, запечённое с яйцом','b','KL','eu',15,'m',[420,16,36,10,7,70],'🥑',95,'eggs dairy','Авокадо|1|шт|v;Яйца|2|шт|e;Твёрдый сыр|20|г|e','Разрежьте авокадо пополам и удалите косточку.;Вбейте в каждую половинку по яйцу, посыпьте сыром.;Запекайте 12 минут при 200 °C.');
+R('keto-syrniki','Кето-сырники на миндальной муке','b','KLH','eu',20,'m',[350,28,22,8,2,200],'🥞',35,'dairy eggs nuts','Творог 5%|150|г|e;Яйца|1|шт|e;Миндальная мука|25|г|n;Сливочное масло|8|г|e','Смешайте творог, яйцо и миндальную муку.;Сформируйте 4 сырника.;Обжарьте на масле по 3 минуты с каждой стороны.');
+R('oatmeal-berries','Овсянка с ягодами и мёдом','b','MD','eu',10,'e',[340,12,9,52,8,180],'🥣',30,'dairy gluten','Овсяные хлопья|50|г|b;Молоко 1,5%|200|мл|e;Ягоды|80|г|f;Мёд|10|г|b','Доведите молоко до кипения и всыпьте хлопья.;Варите 5 минут, помешивая.;Добавьте ягоды и мёд.');
+R('yogurt-granola','Греческий йогурт с гранолой и орехами','bs','MDH','eu',5,'m',[330,20,12,36,4,250],'🍓',340,'dairy nuts gluten','Греческий йогурт|180|г|e;Гранола без сахара|30|г|b;Грецкие орехи|10|г|n;Ягоды|50|г|f','Выложите йогурт в пиалу.;Добавьте гранолу, ягоды и орехи.',1);
+R('shakshuka','Шакшука','b','MDHL','med',25,'e',[310,17,19,16,4,110],'🍅',8,'eggs spicy','Яйца|2|шт|e;Помидоры|200|г|v;Болгарский перец|80|г|v;Лук репчатый|40|г|v;Оливковое масло|10|мл|o','Обжарьте лук и перец на оливковом масле.;Добавьте нарезанные помидоры и тушите 10 минут.;Сделайте углубления, вбейте яйца и готовьте под крышкой 6 минут.');
+R('buckwheat-egg','Гречка с яйцом и огурцом','b','MD','kz',15,'e',[350,15,11,46,6,60],'🍚',40,'eggs dairy','Гречка|60|г|b;Яйца|1|шт|e;Огурец|100|г|v;Сливочное масло|5|г|e','Отварите гречку 12 минут.;Сварите яйцо вкрутую.;Подавайте с маслом и нарезанным огурцом.');
+R('avocado-toast','Цельнозерновой тост с авокадо и яйцом','b','MDH','med',10,'m',[370,17,20,30,8,90],'🥪',110,'eggs gluten','Цельнозерновой хлеб|2|ломт.|b;Авокадо|0.5|шт|v;Яйца|1|шт|e;Руккола|15|г|v','Подсушите хлеб в тостере.;Разомните авокадо с солью и лимонным соком.;Выложите на тосты, сверху — яйцо пашот и руккола.');
+R('cottage-berries','Творог с ягодами и корицей','bs','HDML','eu',5,'e',[250,28,7,18,3,220],'🍒',350,'dairy','Творог 5%|180|г|e;Ягоды|60|г|f;Корица|1|щеп.|o','Выложите творог в миску.;Добавьте ягоды и посыпьте корицей.',1);
+R('tofu-scramble','Скрэмбл из тофу с овощами','b','KLHM','as',15,'m',[290,22,20,6,2,350],'🥬',60,'legumes','Тофу|180|г|b;Шпинат свежий|40|г|v;Помидоры черри|50|г|v;Оливковое масло|10|мл|o;Куркума|1|щеп.|o','Раскрошите тофу вилкой.;Обжарьте с куркумой на масле 4 минуты.;Добавьте шпинат и черри, прогрейте 2 минуты.');
+R('mushroom-omelet','Омлет с грибами и сыром','bd','KLH','eu',15,'e',[390,24,30,6,2,250],'🍄',35,'eggs dairy mushrooms','Яйца|3|шт|e;Шампиньоны|100|г|v;Твёрдый сыр|25|г|e;Сливочное масло|8|г|e','Обжарьте нарезанные грибы на масле 5 минут.;Залейте взбитыми яйцами.;Посыпьте сыром и готовьте под крышкой 5 минут.');
+// lunches / dinners
+R('chicken-sorpa','Сорпа из курицы с овощами','l','MDHL','kz',40,'e',[380,34,12,32,5,60],'🍲',30,'meat','Куриное филе|150|г|m;Картофель|100|г|v;Морковь|60|г|v;Лук репчатый|40|г|v;Зелень|10|г|v','Залейте курицу 1 л воды и варите 20 минут, снимая пену.;Добавьте нарезанные картофель, морковь и лук.;Варите ещё 15 минут, посыпьте зеленью.');
+R('kuyrdak','Куырдак из говядины с овощами','ld','LH','kz',35,'m',[450,38,26,14,4,40],'🥘',15,'meat','Говядина|160|г|m;Кабачок|120|г|v;Лук репчатый|40|г|v;Болгарский перец|60|г|v;Растительное масло|10|мл|o','Нарежьте говядину кубиками и обжарьте до корочки.;Добавьте лук, перец и кабачок.;Тушите под крышкой 20 минут.');
+R('salmon-broccoli','Лосось с брокколи и лимоном','ld','KLHM','eu',25,'p',[520,36,38,8,4,90],'🐟',20,'fish','Филе лосося|160|г|r;Брокколи|150|г|v;Оливковое масло|10|мл|o;Лимон|0.25|шт|f','Разогрейте духовку до 200 °C.;Выложите лосось и брокколи на противень, сбрызните маслом.;Запекайте 15 минут, подавайте с лимоном.');
+R('keto-caesar','Кето-цезарь с курицей','l','KLH','eu',15,'m',[480,38,34,6,3,180],'🥗',100,'meat dairy eggs','Куриное филе|150|г|m;Салат ромэн|100|г|v;Пармезан|20|г|e;Яйца|1|шт|e;Оливковое масло|15|мл|o','Обжарьте курицу и нарежьте полосками.;Смешайте салат с соусом из масла, желтка и пармезана.;Выложите курицу, посыпьте сыром.');
+R('greek-chickpea','Греческий салат с нутом','l','MD','med',15,'e',[420,16,24,36,10,220],'🥒',120,'dairy legumes','Нут консервированный|100|г|b;Огурец|100|г|v;Помидоры|100|г|v;Фета|40|г|e;Оливковое масло|10|мл|o;Маслины|20|г|b','Нарежьте овощи крупными кусками.;Добавьте нут, маслины и фету.;Заправьте оливковым маслом и орегано.');
+R('lentil-soup','Суп из красной чечевицы','l','MDH','med',40,'e',[360,20,8,52,14,70],'🥣',25,'legumes','Красная чечевица|70|г|b;Морковь|60|г|v;Лук репчатый|40|г|v;Помидоры|100|г|v;Оливковое масло|5|мл|o','Обжарьте лук и морковь.;Добавьте чечевицу, помидоры и 600 мл воды.;Варите 20 минут и пробейте блендером.');
+R('turkey-bulgur','Индейка с булгуром и овощами','ld','MDH','med',30,'m',[480,38,14,48,9,60],'🍗',35,'meat gluten','Филе индейки|150|г|m;Булгур|60|г|b;Кабачок|100|г|v;Помидоры черри|60|г|v;Оливковое масло|8|мл|o','Отварите булгур 15 минут.;Обжарьте индейку кусочками 8 минут.;Добавьте овощи, прогрейте и смешайте с булгуром.');
+R('light-plov','Лёгкий плов с курицей и бурым рисом','l','DM','kz',50,'m',[520,32,16,62,5,50],'🍛',40,'meat','Куриное филе|140|г|m;Бурый рис|70|г|b;Морковь|80|г|v;Лук репчатый|40|г|v;Растительное масло|10|мл|o;Зира|1|щеп.|o','Обжарьте курицу, лук и морковь соломкой.;Добавьте промытый рис, зиру и 200 мл воды.;Томите под крышкой 35 минут.');
+R('shrimp-zoodles','Креветки с лапшой из цукини','ld','KLH','as',20,'p',[360,30,22,9,3,120],'🍤',10,'seafood','Креветки очищенные|150|г|r;Кабачок|200|г|v;Чеснок|2|зуб.|v;Оливковое масло|15|мл|o;Кунжут|5|г|n','Нарежьте кабачок спиральной тёркой.;Обжарьте креветки с чесноком 3 минуты.;Добавьте «лапшу», прогрейте 2 минуты, посыпьте кунжутом.');
+R('cauli-rice-chicken','Жареный «рис» из цветной капусты с курицей','ld','KLH','as',25,'m',[430,36,26,11,5,70],'🥡',50,'meat eggs','Куриное филе|150|г|m;Цветная капуста|200|г|v;Яйца|1|шт|e;Зелёный лук|15|г|v;Кунжутное масло|15|мл|o','Измельчите капусту в блендере до состояния риса.;Обжарьте курицу кубиками.;Добавьте капусту, яйцо и лук, жарьте 5 минут.');
+R('stuffed-peppers','Перцы, фаршированные индейкой','ld','LHDM','eu',45,'m',[410,32,18,28,6,110],'🌶️',5,'meat dairy','Болгарский перец|2|шт|v;Фарш индейки|150|г|m;Бурый рис|20|г|b;Томатный соус|80|г|o;Твёрдый сыр|15|г|e','Смешайте фарш с отварным рисом.;Начините перцы и залейте томатным соусом.;Запекайте 35 минут при 190 °C, в конце посыпьте сыром.');
+R('halloumi-salad','Халлуми-гриль с овощным салатом','ld','KLM','med',15,'p',[460,24,38,7,3,600],'🧀',45,'dairy','Халлуми|100|г|e;Руккола|40|г|v;Огурец|80|г|v;Помидоры черри|60|г|v;Оливковое масло|10|мл|o','Обжарьте ломтики халлуми на сухой сковороде по 2 минуты.;Смешайте овощи с маслом.;Выложите сыр на салат.');
+R('mushroom-soup','Крем-суп из шампиньонов','ld','KL','eu',30,'m',[340,8,30,10,3,120],'🍵',30,'dairy mushrooms','Шампиньоны|250|г|v;Сливки 20%|100|мл|e;Лук репчатый|30|г|v;Сливочное масло|10|г|e','Обжарьте лук и грибы на масле 10 минут.;Залейте 300 мл воды и варите 10 минут.;Добавьте сливки и пробейте блендером.');
+R('buddha-bowl','Боул с киноа, нутом и овощами','l','MD','med',25,'m',[490,18,20,60,12,120],'🥙',80,'legumes','Киноа|60|г|b;Нут консервированный|80|г|b;Морковь|60|г|v;Авокадо|0.25|шт|v;Шпинат свежий|30|г|v;Кунжутная паста|10|г|n','Отварите киноа 15 минут.;Запеките нут с паприкой 10 минут.;Соберите боул и полейте соусом из кунжутной пасты.');
+R('tuna-salad','Салат с тунцом и яйцом','l','KLHM','med',10,'e',[380,34,26,4,2,60],'🥫',210,'fish eggs','Тунец в собственном соку|120|г|r;Яйца|2|шт|e;Листья салата|60|г|v;Огурец|80|г|v;Оливковое масло|12|мл|o','Сварите яйца вкрутую.;Нарежьте салат и огурец.;Добавьте тунец и яйца, заправьте маслом.');
+R('lagman','Лагман с индейкой','l','DM','as',45,'m',[520,32,14,64,6,60],'🍜',20,'meat gluten spicy','Филе индейки|130|г|m;Лапша из твёрдых сортов|70|г|b;Болгарский перец|60|г|v;Помидоры|80|г|v;Редька|50|г|v;Растительное масло|8|мл|o','Обжарьте индейку и овощи, добавьте 300 мл воды.;Тушите 15 минут до густого соуса.;Подавайте с отварной лапшой.');
+R('baked-chicken-veg','Куриная грудка, запечённая с овощами','ld','DMHL','eu',35,'e',[400,42,14,24,7,70],'🍽️',30,'meat','Куриное филе|170|г|m;Кабачок|120|г|v;Болгарский перец|80|г|v;Лук красный|40|г|v;Оливковое масло|8|мл|o','Нарежьте овощи и выложите в форму вместе с курицей.;Сбрызните маслом, посолите, добавьте прованские травы.;Запекайте 25 минут при 200 °C.');
+R('cod-veg','Треска с овощами на пару','ld','MDHL','med',30,'m',[350,36,12,22,6,80],'🐠',200,'fish','Филе трески|180|г|r;Брокколи|120|г|v;Морковь|60|г|v;Оливковое масло|10|мл|o;Лимон|0.25|шт|f','Посолите треску и сбрызните лимоном.;Готовьте рыбу и овощи на пару 15 минут.;Полейте оливковым маслом.');
+R('pork-cabbage','Свиная отбивная с тушёной капустой','d','KLH','eu',30,'e',[480,36,34,8,4,80],'🍖',25,'meat pork dairy','Свиная корейка|150|г|m;Белокочанная капуста|200|г|v;Сливочное масло|10|г|e;Тмин|1|щеп.|o','Отбейте мясо, посолите и обжарьте по 4 минуты с каждой стороны.;Нашинкуйте капусту и тушите на масле с тмином 15 минут.;Подавайте вместе.');
+R('keto-meatballs','Кето-тефтели в сливочном соусе','d','KLH','eu',35,'m',[520,34,40,6,1,150],'🧆',25,'meat dairy eggs','Говяжий фарш|150|г|m;Яйца|1|шт|e;Сливки 20%|60|мл|e;Шпинат свежий|40|г|v;Чеснок|1|зуб.|v','Смешайте фарш с яйцом и чесноком, сформируйте тефтели.;Обжарьте их со всех сторон 6 минут.;Залейте сливками, добавьте шпинат и тушите 10 минут.');
+R('eggplant-parm','Баклажаны, запечённые с моцареллой','d','ML','med',40,'m',[380,18,24,24,9,380],'🍆',280,'dairy','Баклажан|1|шт|v;Моцарелла|60|г|e;Томатный соус|100|г|o;Базилик|5|г|v;Оливковое масло|10|мл|o','Нарежьте баклажан кружками и запеките 15 минут.;Переложите слоями с соусом и моцареллой.;Запекайте ещё 15 минут, украсьте базиликом.');
+R('cauli-gratin','Цветная капуста, запечённая с сыром','d','KL','eu',35,'e',[420,20,34,12,5,520],'🥦',90,'dairy','Цветная капуста|250|г|v;Твёрдый сыр|50|г|e;Сливки 20%|60|мл|e;Мускатный орех|1|щеп.|o','Отварите соцветия 5 минут.;Выложите в форму, залейте сливками, посыпьте сыром.;Запекайте 20 минут при 190 °C.');
+R('salmon-teriyaki','Лосось терияки с рисом','ld','MDH','as',30,'p',[510,34,18,50,3,50],'🍣',15,'fish gluten','Филе лосося|130|г|r;Рис басмати|60|г|b;Соус терияки|20|мл|o;Огурец|80|г|v;Кунжут|3|г|n','Отварите рис.;Обжарьте лосось по 3 минуты с каждой стороны, полейте соусом.;Подавайте с рисом и огурцом.');
+R('steak-salad','Стейк из говядины с зелёным салатом','ld','KLH','eu',20,'p',[540,42,40,5,2,40],'🥩',10,'meat','Говяжий стейк|170|г|m;Листья салата|70|г|v;Огурец|80|г|v;Оливковое масло|15|мл|o','Достаньте стейк за 30 минут до готовки и посолите.;Обжарьте по 3–4 минуты с каждой стороны и дайте отдохнуть 5 минут.;Подавайте с салатом, заправленным маслом.');
+R('chickpea-curry','Карри из нута со шпинатом','ld','MD','as',35,'e',[440,16,16,56,14,120],'🍛',45,'legumes spicy','Нут консервированный|150|г|b;Кокосовое молоко|80|мл|b;Шпинат свежий|50|г|v;Помидоры|100|г|v;Паста карри|10|г|o','Обжарьте пасту карри 1 минуту.;Добавьте помидоры, нут и кокосовое молоко, тушите 15 минут.;Вмешайте шпинат.');
+R('turkey-cutlets','Котлеты из индейки с гречкой','ld','DMH','kz',35,'e',[460,38,14,44,6,60],'🍘',35,'meat eggs','Фарш индейки|160|г|m;Гречка|50|г|b;Яйца|1|шт|e;Лук репчатый|30|г|v;Огурец|80|г|v','Смешайте фарш с луком и яйцом, сформируйте котлеты.;Запекайте 20 минут при 200 °C.;Подавайте с отварной гречкой и огурцом.');
+R('chicken-thighs','Куриные бёдра с кабачками и травами','d','KLH','med',40,'e',[500,36,38,7,3,50],'🍗',40,'meat','Куриные бёдра без кости|180|г|m;Кабачок|150|г|v;Оливковое масло|10|мл|o;Чеснок|2|зуб.|v;Розмарин|1|вет.|v','Натрите бёдра чесноком и розмарином.;Выложите с кабачками в форму.;Запекайте 30 минут при 200 °C.');
+R('tofu-stirfry','Тофу с овощами в воке','ld','MDH','as',20,'m',[360,24,18,24,7,400],'🥢',130,'legumes gluten','Тофу|160|г|b;Брокколи|100|г|v;Болгарский перец|80|г|v;Соевый соус|15|мл|o;Кунжутное масло|8|мл|o','Обжарьте кубики тофу до золотистой корочки.;Добавьте овощи и жарьте на сильном огне 4 минуты.;Влейте соевый соус.');
+R('zucchini-lasagna','Лазанья из кабачков с рикоттой','d','KL','med',45,'m',[430,24,32,11,3,420],'🍝',15,'dairy eggs','Кабачок|250|г|v;Рикотта|120|г|e;Моцарелла|40|г|e;Томатный соус|60|г|o;Яйца|1|шт|e','Нарежьте кабачки тонкими пластами и подсушите в духовке 8 минут.;Смешайте рикотту с яйцом.;Выложите слоями с соусом и моцареллой, запекайте 25 минут.');
+R('caprese-avocado','Капрезе с авокадо','l','KLM','med',10,'m',[450,18,40,9,6,380],'🍅',0,'dairy','Моцарелла|100|г|e;Помидоры|150|г|v;Авокадо|0.5|шт|v;Базилик|5|г|v;Оливковое масло|10|мл|o','Нарежьте моцареллу, помидоры и авокадо ломтиками.;Выложите внахлёст, переложите базиликом.;Полейте маслом и посолите.');
+R('cauli-pizza','Кето-пицца на основе из цветной капусты','ld','KL','eu',40,'m',[440,26,32,12,5,480],'🍕',20,'dairy eggs','Цветная капуста|250|г|v;Моцарелла|80|г|e;Яйца|1|шт|e;Помидоры черри|60|г|v;Томатный соус|40|г|o','Измельчите капусту, отожмите и смешайте с яйцом и половиной сыра.;Сформируйте основу и запекайте 15 минут.;Добавьте соус, черри и сыр, запекайте ещё 10 минут.');
+// snacks & desserts
+R('almonds','Горсть миндаля','s','KLMHD','eu',1,'m',[175,6,15,6,4,80],'🌰',30,'nuts','Миндаль|30|г|n','Отмерьте горсть (30 г) и ешьте не спеша.');
+R('celery-cheese','Сельдерей со сливочным сыром','s','KL','eu',5,'e',[140,3,13,4,2,60],'🥬',100,'dairy','Стебли сельдерея|100|г|v;Сливочный сыр|30|г|e','Нарежьте сельдерей палочками.;Наполните сливочным сыром.');
+R('apple-pb','Яблоко с арахисовой пастой','s','MD','eu',3,'e',[200,5,9,26,5,20],'🍎',0,'nuts legumes','Яблоко|1|шт|f;Арахисовая паста|15|г|n','Нарежьте яблоко дольками.;Подавайте с арахисовой пастой.',1);
+R('kefir-bran','Айран с отрубями','s','DMH','kz',1,'e',[130,8,4,14,3,300],'🥛',200,'dairy gluten','Айран или кефир 1%|250|мл|e;Овсяные отруби|10|г|b','Смешайте айран с отрубями.;Дайте постоять 5 минут.');
+R('boiled-eggs','Два яйца вкрутую','s','KLHMD','eu',10,'e',[150,13,10,1,0,55],'🥚',45,'eggs','Яйца|2|шт|e','Варите яйца 9 минут после закипания.;Остудите в холодной воде.');
+R('hummus-veg','Хумус с овощными палочками','s','MD','med',5,'e',[190,7,10,20,6,60],'🥕',25,'legumes','Хумус|60|г|b;Морковь|80|г|v;Огурец|80|г|v','Нарежьте овощи палочками.;Подавайте с хумусом.');
+R('olives-cheese','Сыр с маслинами','s','KL','med',2,'m',[200,9,18,2,1,250],'🧀',50,'dairy','Твёрдый сыр|30|г|e;Маслины|30|г|b','Нарежьте сыр кубиками.;Подавайте с маслинами.');
+R('avocado-mousse','Шоколадный мусс из авокадо','s','KL','eu',10,'m',[220,4,19,10,6,30],'🍫',25,'','Авокадо|0.5|шт|v;Какао-порошок|10|г|b;Эритритол|10|г|b;Кокосовое молоко|30|мл|b','Пробейте все ингредиенты блендером до гладкости.;Охладите 20 минут.',1);
+R('baked-apple','Печёное яблоко с творогом и корицей','s','MD','eu',20,'e',[180,9,3,30,5,100],'🍏',90,'dairy','Яблоко|1|шт|f;Творог 5%|50|г|e;Корица|1|щеп.|o','Удалите сердцевину яблока.;Наполните творогом, посыпьте корицей.;Запекайте 15 минут при 180 °C.',1);
+R('berry-parfait','Ягодный парфе с йогуртом','s','HMD','eu',5,'m',[160,14,3,18,3,180],'🍨',330,'dairy','Греческий йогурт|150|г|e;Ягоды|60|г|f','Выложите слоями йогурт и ягоды.;Подавайте охлаждённым.',1);
+R('berries-cream','Ягоды со взбитыми сливками','s','KL','eu',5,'m',[180,2,16,8,3,40],'🍓',350,'dairy','Малина или клубника|70|г|f;Сливки 33%|40|мл|e','Взбейте сливки без сахара.;Выложите на ягоды.',1);
+
+const UNITW={'Яйца':55,'Авокадо':160,'Болгарский перец':150,'Яблоко':180,'Баклажан':300,'Лимон':100};
+const isVeg=r=>!r.x.some(t=>t==='meat'||t==='pork'||t==='fish'||t==='seafood');
+
+/* ---------- reference data ---------- */
+const ACT={1:{k:1.2,n:'Сидячий',s:'Офис, мало ходьбы'},2:{k:1.375,n:'Лёгкий',s:'1–3 тренировки в неделю'},3:{k:1.55,n:'Умеренный',s:'3–5 тренировок'},4:{k:1.725,n:'Высокий',s:'6–7 тренировок'},5:{k:1.9,n:'Очень высокий',s:'Спорт + физ. работа'}};
+const EXCL=[['meat','Мясо'],['pork','Свинина'],['fish','Рыба'],['seafood','Морепродукты'],['dairy','Молочное'],['eggs','Яйца'],['gluten','Глютен'],['nuts','Орехи'],['mushrooms','Грибы'],['legumes','Бобовые'],['spicy','Острое']];
+const HEALTH=[['preg','Беременность'],['bf','Грудное вскармливание'],['diab','Сахарный диабет'],['kidney','Болезни почек'],['liver','Болезни печени или желчного'],['thyroid','Болезни щитовидной железы'],['meds','Постоянный приём лекарств'],['stones','Мочекаменная болезнь'],['ed','Расстройства пищевого поведения']];
+const DIET_ORDER=['keto','lowcarb','med','hp','dash','veg'];
+const DIETS={
+  keto:{n:'Кето',em:'🥑',h:95,short:'Минимум углеводов — жиры становятся основным топливом',mac:'20–25 / 65–75 / 5–10',badges:['Популярная','Быстрый результат'],
+    principle:'Углеводы снижаются до 20–50 г в сутки, основу рациона составляют полезные жиры, белок и некрахмалистые овощи. Через 1–2 недели организм переходит в кетоз и активнее расходует жировые запасы.',
+    who:'Здоровым женщинам, которым нужен быстрый старт и которым комфортно без хлеба, круп и сладкого.',
+    contra:'Беременность и ГВ, сахарный диабет, болезни почек, печени, желчного пузыря и щитовидной железы, РПП. Строгое кето — не дольше 3 месяцев подряд, затем переход на low-carb.',
+    yes:'Яйца, мясо, птица, рыба, морепродукты, сыры, сливочное и оливковое масло, авокадо, орехи, семена, зелень, кабачки, брокколи, цветная капуста, грибы, немного ягод.',
+    no:'Сахар, хлеб, крупы, макароны, картофель, бананы, виноград, соки, сладкие йогурты, бобовые, пиво.'},
+  lowcarb:{n:'Мягкий low-carb',em:'🥗',h:120,short:'Умеренное снижение углеводов без жёстких рамок',mac:'30 / 40 / 30',badges:['Для удержания'],
+    principle:'Углеводы — около 30% калорий, в основном из овощей, ягод и небольших порций цельных круп. Сахар и выпечка — по минимуму.',
+    who:'Тем, кто хочет снижать вес без строгого подсчёта, а также как мягкий выход из кето.',
+    contra:'Серьёзных противопоказаний нет; при хронических заболеваниях — консультация врача.',
+    yes:'Мясо, рыба, яйца, творог, овощи, ягоды, орехи, немного гречки, киноа, бурого риса.',
+    no:'Сладости, белый хлеб, сладкие напитки, фастфуд.'},
+  med:{n:'Средиземноморская',em:'🐟',h:200,short:'Овощи, рыба, оливковое масло и цельные злаки',mac:'20 / 35 / 45',badges:['Для удержания','Для сердца'],
+    principle:'Много овощей, бобовых, цельных злаков, рыбы и оливкового масла; красное мясо и сладкое — редко. Один из самых изученных и сбалансированных стилей питания.',
+    who:'Почти всем. Рекомендуется по умолчанию и особенно для удержания веса.',
+    contra:'Нет, при аллергиях — исключение соответствующих продуктов.',
+    yes:'Овощи, фрукты, бобовые, цельные крупы, рыба, морепродукты, оливковое масло, орехи, йогурт, сыр.',
+    no:'Переработанное мясо, сахар, белый хлеб, трансжиры.'},
+  hp:{n:'Высокобелковая',em:'🍗',h:30,short:'Больше белка — дольше сытость и сохранение мышц',mac:'30–35 / 30 / 35–40',badges:['Для активных'],
+    principle:'Белок в каждом приёме пищи (птица, рыба, творог, яйца, бобовые), достаточно овощей и умеренно — сложных углеводов.',
+    who:'Активным женщинам, тем, кто тренируется, и тем, кому тяжело переносить голод.',
+    contra:'Заболевания почек — только по согласованию с врачом.',
+    yes:'Курица, индейка, рыба, яйца, творог, греческий йогурт, бобовые, овощи, крупы.',
+    no:'Сладости, сладкие напитки, фастфуд.'},
+  dash:{n:'DASH / сбалансированная',em:'🥣',h:40,short:'Классическое сбалансированное питание',mac:'20 / 30 / 50',badges:['Безопасный выбор'],
+    principle:'Сбалансированная тарелка: половина — овощи, четверть — белок, четверть — цельные крупы; меньше соли и сахара.',
+    who:'Безопасный вариант при ограничениях по здоровью и для тех, кто хочет «просто питаться правильно».',
+    contra:'Нет.',
+    yes:'Овощи, фрукты, цельные крупы, нежирный белок, молочные продукты, орехи, бобовые.',
+    no:'Лишняя соль, сахар, колбасы, фастфуд.'},
+  veg:{n:'Вегетарианская',em:'🥦',h:110,short:'Без мяса и рыбы, с контролем белка, железа и B12',mac:'20 / 30 / 50',badges:['Растительная'],
+    principle:'Белок — из яиц, молочных продуктов, бобовых, тофу, орехов. Обязательно следим за B12, железом и кальцием.',
+    who:'Тем, кто не ест мясо и рыбу по убеждениям или вкусу.',
+    contra:'Анемия — по согласованию с врачом.',
+    yes:'Овощи, фрукты, бобовые, тофу, яйца, молочное, крупы, орехи, семена.',
+    no:'Мясо, птица, рыба, морепродукты.'}
+};
+const KETO_V={classic:{n:'Классическое',c:'≤ 20–25 г',w:'Максимальный результат, строгий подсчёт'},lazy:{n:'Мягкое (ленивое)',c:'≤ 30–50 г',w:'Для новичков, меньше ограничений'},veg:{n:'Вегетарианское',c:'≤ 30 г',w:'Без мяса и рыбы, яйца и молочное можно'},cyclic:{n:'Циклическое',c:'5 дн. ≤ 25 г, 2 дн. 100–150 г',w:'Для активно тренирующихся'}};
+const KETO_YES=[['🥚','Яйца'],['🥩','Мясо'],['🐟','Рыба'],['🧀','Сыр'],['🥑','Авокадо'],['🥦','Брокколи'],['🥬','Зелень'],['🍄','Грибы'],['🌰','Орехи'],['🍓','Ягоды, немного']];
+const KETO_NO=[['🍞','Хлеб'],['🍚','Крупы'],['🍝','Макароны'],['🥔','Картофель'],['🍌','Бананы'],['🍇','Виноград'],['🧃','Соки'],['🍰','Сладости'],['🍺','Пиво']];
+const MACRO={'keto-classic':[22,73,5],'keto-lazy':[25,65,10],'keto-veg':[22,70,8],'keto-cyclic':[22,70,8],lowcarb:[30,40,30],med:[20,35,45],hp:[32,30,38],dash:[20,30,50],veg:[20,30,50]};
+const NETLIM={'keto-classic':25,'keto-lazy':50,'keto-veg':30,'keto-cyclic':25};
+const SLOTS={3:[['b',.30],['l',.40],['d',.30]],4:[['b',.25],['l',.35],['s',.10],['d',.30]],5:[['b',.20],['s',.10],['l',.30],['s',.10],['d',.30]]};
+const SLOTN={b:'Завтрак',l:'Обед',d:'Ужин',s:'Перекус'};
+const TIPS=['Выпивайте стакан воды перед каждым приёмом пищи — это помогает не переедать.','Сон 7–9 часов снижает тягу к сладкому: недосып повышает гормон голода.','Добавляйте белок в каждый приём пищи — так сытость держится дольше.','Сорвались? Это нормально. Просто вернитесь к плану со следующего приёма пищи — без чувства вины.','Прогулка 20–30 минут после ужина мягко помогает контролировать сахар крови.','Готовьте овощи заранее: нарезанные палочки — лучший перекус под рукой.','Витамины D3 и Омега-3 принимайте с едой, где есть жиры, — так они лучше усваиваются.','Ешьте медленно: сигнал сытости приходит примерно через 20 минут.','Взвешивайтесь в одно и то же время — утром, натощак, после туалета.','Колебания веса на 0,5–1 кг за день — это вода, а не жир. Смотрите на тренд за неделю.'];
+const FAQ=[['Безопасна ли кето-диета?','Для здоровой взрослой женщины кето на ограниченный срок (до 3 месяцев) обычно безопасна. В первые 2 недели возможен «кето-грипп» — слабость и головная боль; помогают вода, соль и магний. При беременности, ГВ, диабете, болезнях почек, печени, желчного пузыря и щитовидной железы кето недоступна — выбирайте сбалансированное питание и консультируйтесь с врачом.'],
+ ['Что делать, если я сорвалась?','Ничего страшного — один приём пищи не отменяет месяц усилий. Отметьте, что было, и вернитесь к плану со следующего приёма. Не пытайтесь «отработать» срыв голодовкой — это запускает новый виток.'],
+ ['Нужны ли витамины, если я питаюсь правильно?','На сниженной калорийности добрать все микроэлементы из еды сложнее, поэтому мы предлагаем базовый набор (D3, Омега-3, магний, мультивитамин). Дозировки ориентировочные — лучше сдать анализы и обсудить приём с врачом.'],
+ ['Почему калорий не меньше 1200?','Ниже этого порога сложно получить достаточно белка и микроэлементов, а организм начинает экономить энергию. Поэтому расчёт никогда не опускается ниже 1200 ккал, а темп снижения при необходимости уменьшается автоматически.'],
+ ['Можно ли совмещать кето и интервальное голодание?','Да, если нет противопоказаний. Включите режим 14/10 или 16/8 — все приёмы пищи и витамины попадут в окно питания.'],
+ ['Как выйти из кето и не набрать вес?','В плане есть сценарий выхода: две недели постепенного увеличения углеводов (кето → low-carb → средиземноморская). Калорийность остаётся под контролем, поэтому вес не возвращается.'],
+ ['Где хранятся мои данные?','В этой версии — только в вашем браузере (гостевой режим). Мы не передаём их третьим лицам. Удалить данные можно кнопкой «Удалить мои данные» в подвале сайта.']];
+
+/* ---------- state ---------- */
+const KEY='cvetform_v1';
+const DEF={profile:{age:35,height:165,weight:78,kg:8,goalW:70,activity:3,goal:'both',pace:0.5,health:[]},
+  prefs:{diet:'med',keto:'lazy',fasting:'off',auto:false,excl:[],allergy:[],freeExcl:'',cuisines:[],sweets:'some',meals:4,cook:'30',batch:false,budget:'m',servings:1,wake:'07:00',sleep:'23:00'},
+  plan:null,phase:'loss',step:1,sel:0,favs:[],weights:[],eaten:{},taken:{},water:{},shop:{},vitOff:[],vitOn:[],vitCustom:[],shopW:0,dirty:false};
+function load(){try{const s=JSON.parse(localStorage.getItem(KEY));if(!s)return null;return s}catch(e){return null}}
+const saved=load()||{};
+const S=Object.assign({},JSON.parse(JSON.stringify(DEF)),saved);
+S.profile=Object.assign({},DEF.profile,saved.profile||{});
+S.prefs=Object.assign({},DEF.prefs,saved.prefs||{});
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+const hasHealth=()=>S.profile.health.length>0;
+
+/* ---------- calculations ---------- */
+function calc(p=S.profile){
+  const hm=p.height/100,bmi=p.weight/(hm*hm);
+  const minW=Math.ceil(18.5*hm*hm*2)/2;
+  const maxLose=Math.max(0,Math.floor((p.weight-minW)*2)/2);
+  const goalW=p.goal==='maintain'?p.weight:p.weight-p.kg;
+  const bmiGoal=goalW/(hm*hm);
+  const k=ACT[p.activity].k;
+  const bmr=10*p.weight+6.25*p.height-5*p.age-161;
+  const tdee=bmr*k;
+  const tdeeGoal=(10*goalW+6.25*p.height-5*p.age-161)*k;
+  const notes=[];
+  let deficit=7700*p.pace/7;
+  if(deficit>tdee*0.25){deficit=tdee*0.25;notes.push('Дефицит ограничен 25% от вашего суточного расхода — так безопаснее для обмена веществ.')}
+  let kcal=tdee-deficit;
+  if(kcal<1200){kcal=1200;notes.push('Калорийность не опускается ниже 1200 ккал — темп снижения автоматически уменьшен.')}
+  const pace=Math.max(0,(tdee-kcal)*7/7700);
+  const weeks=pace>0.01?p.kg/pace:Infinity;
+  const valid=p.goal==='maintain'||(p.kg>=1&&p.kg<=maxLose);
+  return {bmi,bmiGoal,minW,maxLose,goalW,bmr,tdee,kcal:Math.round(kcal/10)*10,maint:Math.round(tdeeGoal/10)*10,maintNow:Math.round(tdee/10)*10,pace,weeks,month:pace*4.3,notes,valid,big:p.kg>p.weight*0.1};
+}
+function bmiCat(b){return b<18.5?'недостаточный':b<25?'норма':b<30?'избыточный':'ожирение'}
+function recommend(){
+  const p=S.profile,pr=S.prefs;
+  if(hasHealth())return{d:'dash'};
+  const no=t=>pr.excl.includes(t)||pr.allergy.includes(t);
+  if(no('meat')&&no('fish'))return p.pace>=0.75?{d:'keto',kv:'veg'}:{d:'veg'};
+  if(p.activity>=4)return{d:'hp'};
+  if(p.pace>=0.75)return{d:'keto',kv:'lazy'};
+  return{d:'med'};
+}
+function dietKey(){return S.prefs.diet==='keto'?'keto-'+S.prefs.keto:S.prefs.diet}
+function dietName(k){if(k.startsWith('keto-'))return 'Кето · '+KETO_V[k.slice(5)].n.toLowerCase();return DIETS[k].n}
+function dayDiet(d){const pl=S.plan;if(pl.phase==='keto_exit')return d<7?'lowcarb':'med';return pl.dk}
+function fastingOn(){return S.prefs.fasting!=='off'&&!hasHealth()}
+function schedule(){
+  const pr=S.prefs;const w=toMin(pr.wake);let z=toMin(pr.sleep);if(z<=w)z+=1440;
+  const n=pr.meals;const fast=fastingOn();let start,end;
+  if(fast){const L=pr.fasting==='16'?8:10;end=z-180;start=end-L*60;if(start<w+30){start=w+30;end=start+L*60}}
+  else{start=w+45;end=Math.max(start+(n-1)*120,z-180)}
+  const times=[];for(let i=0;i<n;i++)times.push(Math.round((start+(end-start)*i/(n-1))/15)*15);
+  return{times,start,end,fast,w,z};
+}
+
+/* ---------- plan generation ---------- */
+function excluded(r,pr=S.prefs){
+  const bad=pr.excl.concat(pr.allergy);
+  if(r.x.some(t=>bad.includes(t)))return true;
+  const terms=(pr.freeExcl||'').toLowerCase().split(/[,;\n]/).map(s=>s.trim()).filter(s=>s.length>=3);
+  if(terms.length){const txt=(r.t+' '+r.ing.map(i=>i.n).join(' ')).toLowerCase();if(terms.some(t=>txt.includes(t.length>4?t.slice(0,t.length-1):t)))return true}
+  return false;
+}
+function dietOk(r,dk,d){
+  const has=c=>r.d.includes(c);
+  switch(dk){
+    case 'keto-classic':return has('K');
+    case 'keto-lazy':return has('K')||(has('L')&&r.net<=12);
+    case 'keto-veg':return has('K')&&isVeg(r);
+    case 'keto-cyclic':return d%7>=5?(has('M')||has('L')):has('K');
+    case 'lowcarb':return has('L');
+    case 'med':return has('M');
+    case 'hp':return has('H');
+    case 'dash':return has('D');
+    case 'veg':return isVeg(r)&&(has('M')||has('D')||has('H')||has('L'));
+  }
+  return true;
+}
+const cookOk=r=>S.prefs.cook==='15'?r.tm<=15:S.prefs.cook==='30'?r.tm<=30:true;
+const budgetOk=r=>S.prefs.budget==='e'?r.bu!=='p':true;
+function pool(slot,dk,d){
+  const list=RECIPES.filter(r=>r.m.includes(slot)&&!excluded(r));
+  const byDiet=list.filter(r=>dietOk(r,dk,d));
+  let L=byDiet.filter(r=>cookOk(r)&&budgetOk(r));
+  if(!L.length)L=byDiet.filter(budgetOk);
+  if(!L.length)L=byDiet;
+  if(!L.length)L=list;
+  return L;
+}
+function factorFor(r,target,slot){const lo=slot==='s'?0.5:0.6,hi=slot==='s'?2:1.6;return clamp(Math.round(target/r.kcal*20)/20,lo,hi)}
+function wpick(arr,w){const sum=w.reduce((a,b)=>a+Math.max(0.05,b),0);let x=Math.random()*sum;for(let i=0;i<arr.length;i++){x-=Math.max(0.05,w[i]);if(x<=0)return arr[i]}return arr[arr.length-1]}
+function pickRecipe(slot,d,dk,last,todayIds,firstSnack){
+  const L=pool(slot,dk,d);if(!L.length)return null;
+  const notToday=L.filter(r=>!todayIds.includes(r.id));
+  const fresh=notToday.filter(r=>last[r.id]===undefined||d-last[r.id]>=5);
+  const cand=fresh.length?fresh:(notToday.length?notToday:L);
+  const pr=S.prefs;
+  const w=cand.map(r=>{let v=1;if(pr.cuisines.includes(r.cu))v+=2;if(last[r.id]===undefined)v+=0.5;
+    if(slot==='s'&&r.sw){v+=pr.sweets==='daily'?(firstSnack?8:2):pr.sweets==='some'?0.3:-0.9}return v});
+  return wpick(cand,w);
+}
+function dayTargets(pl,d){return pl.kcalDays?pl.kcalDays[d]:pl.kcal}
+function genDay(d,pl,last,prev){
+  const dk=dayDiet(d);const slots=SLOTS[pl.meals];const kc=dayTargets(pl,d);const meals=[],ids=[];let snackSeen=false;
+  slots.forEach(([s,share],i)=>{
+    let r=null;
+    if(S.prefs.batch&&d%2===1&&prev&&(s==='l'||s==='d')){const pm=prev.meals[i];if(pm&&pm.id&&dietOk(RX[pm.id],dk,d))r=RX[pm.id]}
+    if(!r)r=pickRecipe(s,d,dk,last,ids,s==='s'&&!snackSeen);
+    if(s==='s')snackSeen=true;
+    if(!r){meals.push({s,t:pl.sch.times[i],id:null,f:1});return}
+    ids.push(r.id);last[r.id]=d;
+    meals.push({s,t:pl.sch.times[i],id:r.id,f:factorFor(r,kc*share,s)});
+  });
+  const day={meals};fixNet(day,d,dk,kc);return day;
+}
+function fixNet(day,d,dk,kc){
+  let lim=NETLIM[dk];if(!lim)return;if(dk==='keto-cyclic'&&d%7>=5)return;
+  for(let k=0;k<8;k++){
+    const net=day.meals.reduce((a,m)=>a+(m.id?RX[m.id].net*m.f:0),0);
+    if(net<=lim)return;
+    let wi=-1,wv=-1;day.meals.forEach((m,i)=>{if(m.id){const v=RX[m.id].net*m.f;if(v>wv){wv=v;wi=i}}});
+    const m=day.meals[wi];const share=SLOTS[day.meals.length][wi][1];
+    const ids=day.meals.map(x=>x.id);
+    const alts=pool(m.s,dk,d).filter(r=>!ids.includes(r.id)).map(r=>({r,f:factorFor(r,kc*share,m.s)})).sort((a,b)=>a.r.net*a.f-b.r.net*b.f);
+    if(!alts.length||alts[0].r.net*alts[0].f>=wv){m.f=Math.max(0.6,r1(m.f-0.15));continue}
+    m.id=alts[0].r.id;m.f=alts[0].f;
+  }
+}
+function generatePlan(weekIdx){
+  const c=calc();const pr=S.prefs;
+  let dk=dietKey();
+  if(hasHealth()&&dk.startsWith('keto')){S.prefs.diet='dash';dk='dash'}
+  const phase=S.phase;
+  let base=S.profile.goal==='maintain'?c.maintNow:c.kcal;
+  let kcalDays=null;
+  if(phase==='maintenance'){const tgt=c.maint;const from=Math.min(base,tgt);kcalDays=[];for(let d=0;d<30;d++)kcalDays.push(Math.min(tgt,from+125*(Math.floor(d/7)+1)));base=tgt}
+  const macroKey=phase==='keto_exit'?'lowcarb':dk;
+  const pct=MACRO[macroKey];
+  if(weekIdx!=null&&S.plan){
+    const pl=S.plan;const from=weekIdx*7,to=Math.min(30,from+7);const last={};
+    for(let d=0;d<from;d++)pl.days[d].meals.forEach(m=>{if(m.id)last[m.id]=d});
+    for(let d=from;d<to;d++){pl.days[d]=genDay(d,pl,last,d>0?pl.days[d-1]:null);for(const k in S.eaten)if(k.startsWith(d+'-'))delete S.eaten[k]}
+    save();renderAll();toast('Неделя '+(weekIdx+1)+' обновлена');return;
+  }
+  const pl={start:todayISO(),dk,phase,kcal:base,kcalDays,pct,prot:Math.round(base*pct[0]/100/4),fat:Math.round(base*pct[1]/100/9),carb:Math.round(base*pct[2]/100/4),
+    meals:pr.meals,sch:schedule(),fasting:fastingOn()?pr.fasting:'off',pace:c.pace,goalW:c.goalW,startW:S.profile.weight,weeks:c.weeks,days:[]};
+  S.plan=pl;
+  const last={};
+  for(let d=0;d<30;d++)pl.days.push(genDay(d,pl,last,d?pl.days[d-1]:null));
+  S.eaten={};S.taken={};S.water={};S.shop={};S.sel=0;S.shopW=0;S.dirty=false;
+  if(!S.weights.length)S.weights.push({d:todayISO(),w:S.profile.weight});
+  save();
+}
+function dayTotals(d){
+  const t={kcal:0,p:0,f:0,c:0,net:0,ca:0};
+  S.plan.days[d].meals.forEach(m=>{const r=RX[m.id];if(!r)return;for(const k in t)t[k]+=r[k]*m.f});
+  return t;
+}
+const portionG=(r,f)=>Math.round(r.ing.reduce((a,i)=>a+(i.u==='г'||i.u==='мл'?i.q:i.u==='шт'?i.q*(UNITW[i.n]||60):0),0)*f/5)*5;
+
+/* ---------- vitamins ---------- */
+function vitamins(d){
+  const pl=S.plan;if(!pl)return{items:[]};
+  if(hasHealth())return{blocked:true,items:[]};
+  const p=S.profile;const dk=dayDiet(d);const keto=dk.startsWith('keto'),low=dk==='lowcarb';const veg=dk==='veg'||dk==='keto-veg';
+  const meals=pl.days[d].meals;const times=meals.map(m=>m.t);const sch=pl.sch;
+  const tB=times[0];const li=meals.findIndex(m=>m.s==='l');const tL=times[li>=0?li:1];const tD=times[times.length-1];
+  const items=[];const add=o=>items.push(o);
+  add({id:'d3',n:'Витамин D3',dose:'1000–2000 МЕ',t:tB,food:'С едой',why:'Жирорастворимый — принимайте во время завтрака с жирами. Не превышайте 4000 МЕ без анализа.',c:'var(--yellow)'});
+  add({id:'multi',n:'Мультивитамин для женщин',dose:'1 таблетка',t:tB,food:'С едой',why:'Страховка от дефицитов на сниженной калорийности. Часто уже содержит D3 и фолиевую кислоту — сверьте состав, чтобы не дублировать.',c:'var(--green)'});
+  if(p.age<=45)add({id:'folic',n:'Фолиевая кислота',dose:'400 мкг',t:tB,food:'Утром',why:'Для женщин репродуктивного возраста. Пропустите, если она уже есть в вашем мультивитамине.',c:'var(--green)'});
+  if(veg)add({id:'b12',n:'Витамин B12',dose:'25–100 мкг',t:tB,food:'С завтраком',why:'В растительной пище B12 почти нет. Принимайте утром — может бодрить.',c:'var(--pink)'});
+  const psyl=keto||low;
+  add({id:'omega',n:'Омега-3 (EPA + DHA)',dose:'1000 мг EPA+DHA',t:psyl?tB:tL,food:'С едой',why:'Сердце и сосуды; с едой меньше дискомфорта в желудке. Осторожно при приёме антикоагулянтов.',c:'var(--blue)'});
+  if(psyl)add({id:'psyl',n:'Клетчатка (псиллиум)',dose:'5 г + стакан воды',t:Math.max(tB+120,tL-30),food:'Перед обедом',why:'Поддерживает пищеварение при низкоуглеводном рационе. Отдельно от других добавок минимум на 2 часа.',c:'#9DBF7A'});
+  if(keto){
+    add({id:'na',n:'Натрий (соль, бульон)',dose:'+1–2 г натрия',t:Math.round((tB+tD)/2/15)*15,food:'В течение дня',why:'≈ ½–1 ч. л. соли или 1–2 чашки бульона, распределить на день. Особенно важно в первые 2 недели — облегчает «кето-грипп».',c:'#B9C4CC'});
+    add({id:'k',n:'Калий — из продуктов',dose:'3500–4700 мг из еды',t:tL,food:'С едой',why:'Авокадо, шпинат, грибы, лосось. Добавки калия — только по назначению врача.',c:'#7FC29B'});
+  }
+  add({id:'mg',n:keto?'Магний (цитрат или глицинат)':'Магний (цитрат или глицинат)',dose:keto?'300–350 мг':'200–350 мг элементарного магния',t:sch.fast?tD:sch.z-60,food:sch.fast?'С ужином (в окне питания)':'За 1 час до сна',why:'Сон, мышцы, меньше тяги к сладкому. Не больше 350 мг из добавок.'+(keto?' На кето заменяет базовую дозу, не суммируется.':''),c:'#A38BD6'});
+  if(veg)add({id:'fe',n:'Железо',dose:'18 мг — только при дефиците по анализу',t:sch.fast?sch.start:sch.w+30,food:'Натощак',why:'С витамином C; через 2 часа после кофе, чая и кальция. Включайте только после анализа.',c:'#C8745A',optional:true});
+  // calcium
+  const tot=dayTotals(d);const norm=p.age>50?1200:1000;const def=norm-tot.ca;let calInfo;
+  // with fasting, dinner is the last meal together with magnesium — keep calcium on a separate meal
+  const tCa=sch.fast&&times.length>1?times[times.length-2]:tD;
+  if(p.health.includes('stones'))calInfo={none:true,text:'Кальций не назначается — обратитесь к врачу.'};
+  else if(def<200)calInfo={none:true,text:`Кальция из меню достаточно: ≈ ${fmt(tot.ca)} мг при норме ${fmt(norm)} мг.`};
+  else{
+    const dose=clamp(Math.round(def/250)*250,250,1000);
+    calInfo={none:false,text:`В меню дня ≈ ${fmt(tot.ca)} мг кальция при норме ${fmt(norm)} мг — не хватает ≈ ${fmt(def)} мг.`};
+    const why='Крепкие кости'+(S.prefs.excl.includes('dairy')||S.prefs.allergy.includes('dairy')?' при рационе без молочного':'')+'. Смотрите на упаковке строку «кальций (элементарный)»: 1500 мг цитрата ≈ 315 мг кальция. Не вместе с железом и цинком (≥ 2 ч).';
+    if(dose>500){
+      add({id:'ca2',n:'Цитрат кальция (2-й приём)',dose:(dose-500)+' мг кальция',t:tL,food:'С обедом',why,c:'#E6E1D3'});
+      add({id:'ca',n:'Цитрат кальция',dose:'500 мг кальция',t:tCa,food:tCa===tD?'С ужином':'С едой, отдельно от магния',why,c:'#E6E1D3'});
+    }else add({id:'ca',n:'Цитрат кальция',dose:dose+' мг кальция',t:tCa,food:tCa===tD?'С ужином':'С едой, отдельно от магния',why,c:'#E6E1D3'});
+  }
+  (S.vitCustom||[]).forEach((c,i)=>add({id:'c'+i,n:c.n,dose:c.dose,t:toMin(c.t),food:'Своя добавка',why:'Добавлено вами.',c:'var(--pink)',custom:true}));
+  if(sch.fast)items.forEach(it=>{if(!it.custom)it.t=clamp(it.t,sch.start,sch.end)});
+  items.forEach(it=>{it.on=it.optional?S.vitOn.includes(it.id):!S.vitOff.includes(it.id)});
+  items.sort((a,b)=>a.t-b.t);
+  const warns=[];
+  const fe=items.find(i=>i.id==='fe'&&i.on);
+  if(fe)items.filter(i=>i.id.startsWith('ca')&&i.on).forEach(ca=>{if(Math.abs(ca.t-fe.t)<120)warns.push('Железо и кальций стоят ближе 2 часов — перенесите одно из них.')});
+  if(items.find(i=>i.id==='folic'&&i.on)&&items.find(i=>i.id==='multi'&&i.on))warns.push('Фолиевая кислота и D3 часто уже есть в мультивитамине — проверьте состав, чтобы не дублировать.');
+  return{items,calInfo,warns,sch};
+}
+
+/* ---------- UI helpers ---------- */
+function photo(r,cls=''){return `<div class="ph ${cls}" style="--h:${r.h}" role="img" aria-label="${esc(r.t)}"><span aria-hidden="true">${r.em}</span></div>`}
+let toastT;function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),3200)}
+let lastFocus=null,wakeLock=null;
+function openModal(html,cls=''){lastFocus=document.activeElement;$('#mContent').innerHTML=html;const m=$('#modal');m.className='modal '+cls;$('#modalBack').classList.add('open');$('#modalBack').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';m.scrollTop=0;setTimeout(()=>$('#mClose').focus(),30)}
+function closeModal(){$('#modalBack').classList.remove('open');$('#modalBack').setAttribute('aria-hidden','true');document.body.style.overflow='';releaseWake();if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+function releaseWake(){if(wakeLock){try{wakeLock.release()}catch(e){}wakeLock=null}}
+function opts(el,list,val,cb){
+  el.innerHTML=list.map(([v,l,sub])=>`<button type="button" class="opt" role="radio" aria-checked="${String(v)===String(val)}" data-v="${v}">${l}${sub?`<small>${sub}</small>`:''}</button>`).join('');
+  el.onclick=e=>{const b=e.target.closest('.opt');if(b)cb(b.dataset.v)};
+}
+function chips(el,list,arr,cb,cls=''){
+  el.innerHTML=list.map(([v,l])=>`<button type="button" class="chip ${cls}" aria-pressed="${arr.includes(v)}" data-v="${v}">${l}</button>`).join('');
+  el.onclick=e=>{const b=e.target.closest('.chip');if(!b)return;const v=b.dataset.v;const i=arr.indexOf(v);i>=0?arr.splice(i,1):arr.push(v);cb(v)};
+}
+function markDirty(){if(S.plan){S.dirty=true}save()}
+function confetti(){
+  if(reduceMotion)return;const em=['🌸','🌼','🍃','💛','🌿'];
+  for(let i=0;i<34;i++){const s=document.createElement('span');s.className='confetti';s.textContent=em[i%em.length];s.style.left=Math.random()*100+'vw';s.style.animationDuration=(2.2+Math.random()*2)+'s';s.style.animationDelay=Math.random()*0.6+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),5000)}
+}
+// share of calories from protein / fat / carbs, rounded so the three add up to 100
+function macroPct(p,f,c){
+  const k=[p*4,f*9,c*4],tot=k[0]+k[1]+k[2];if(!tot)return[0,0,0];
+  const r=k.map(v=>Math.round(v/tot*100));r[2]=100-r[0]-r[1];return r;
+}
+function donut(p,f,c,size=120){
+  const kp=p*4,kf=f*9,kc=c*4,tot=kp+kf+kc||1;const R=46,C=2*Math.PI*R;let off=0;
+  const seg=(v,col)=>{const len=v/tot*C;const s=`<circle r="${R}" cx="60" cy="60" fill="none" stroke="${col}" stroke-width="16" stroke-dasharray="${len} ${C-len}" stroke-dashoffset="${-off}" transform="rotate(-90 60 60)"/>`;off+=len;return s};
+  return `<svg width="${size}" height="${size}" viewBox="0 0 120 120" role="img" aria-label="Макросы: белки ${Math.round(kp/tot*100)}%, жиры ${Math.round(kf/tot*100)}%, углеводы ${Math.round(kc/tot*100)}%">${seg(kp,'var(--green)')}${seg(kf,'var(--yellow)')}${seg(kc,'var(--blue)')}<text x="60" y="58" text-anchor="middle" font-size="18" font-weight="700" fill="var(--ink)">${fmt(kp+kf+kc)}</text><text x="60" y="76" text-anchor="middle" font-size="11" fill="var(--muted)">ккал</text></svg>`;
+}
+
+/* ---------- diet pickers ---------- */
+function dietPickerHTML(){
+  const h=hasHealth();const rec=recommend();const pr=S.prefs;
+  let html=DIET_ORDER.map(k=>{
+    const D=DIETS[k];const sel=!pr.auto&&pr.diet===k||pr.auto&&pr.diet===k;const locked=h&&k==='keto';
+    const badges=(k===rec.d?['<span class="badge fit">Подходит вам</span>']:[]).concat(D.badges.map(b=>`<span class="badge">${b}</span>`)).join('');
+    const kv=k==='keto'&&sel&&!locked?`<div class="kv" role="group" aria-label="Вариант кето">${Object.entries(KETO_V).map(([v,o])=>`<button type="button" data-kv="${v}" aria-pressed="${pr.keto===v}" title="${esc(o.w)}">${o.n} · ${o.c}</button>`).join('')}</div>`:'';
+    return `<div class="diet-card reveal in ${sel?'sel':''} ${locked?'locked':''}" role="radio" tabindex="0" aria-checked="${sel}" aria-disabled="${locked}" data-diet="${k}">
+      <span class="check" aria-hidden="true">✓</span>${locked?'<span class="lock">🔒 Недоступно</span>':''}
+      <div class="ph" style="--h:${D.h}" aria-hidden="true"><span>${D.em}</span></div>
+      <div class="dc-body"><h3>${D.n}</h3><p>${D.short}</p><div class="badges">${badges}</div>
+      <div class="dc-mac">Б / Ж / У: <b>${D.mac}</b> %</div>${kv}
+      <div class="dc-foot"><button type="button" class="linkbtn" data-more="${k}">Подробнее</button></div></div></div>`;
+  }).join('');
+  html+=`<div class="diet-card auto ${pr.auto?'sel':''}" role="radio" tabindex="0" aria-checked="${pr.auto}" data-diet="auto"><span class="check" aria-hidden="true">✓</span>
+    <div class="dc-body"><div style="font-size:2.4rem">✨</div><h3>Подберите за меня</h3><p>Выберем диету по вашим параметрам, активности и ограничениям.</p>
+    <div class="badges"><span class="badge fit">Сейчас: ${esc(rec.d==='keto'?'Кето · '+KETO_V[rec.kv].n.toLowerCase():DIETS[rec.d].n)}</span></div></div></div>`;
+  return html;
+}
+function fastHTML(){
+  const locked=hasHealth();const v=locked?'off':S.prefs.fasting;
+  const o=[['off','Выключено'],['14','14/10'],['16','16/8']];
+  return `<span class="lbl">⏱ Интервальное голодание${locked?' 🔒':''}</span><div class="opts" role="radiogroup" aria-label="Интервальное голодание">${o.map(([k,l])=>`<button type="button" class="opt" role="radio" data-fast="${k}" aria-checked="${v===k}" ${locked&&k!=='off'?'aria-disabled="true"':''}>${l}</button>`).join('')}</div><span class="muted small">${locked?'Недоступно при отмеченных противопоказаниях.':'Надстройка над любой диетой: все приёмы пищи и витамины — в окне питания.'}</span>`;
+}
+function renderDiets(){['#dietGrid','#dietGrid2'].forEach(s=>$(s).innerHTML=dietPickerHTML());['#fastRow1','#fastRow2'].forEach(s=>$(s).innerHTML=fastHTML())}
+function selectDiet(k){
+  if(k==='auto'){const r=recommend();S.prefs.auto=true;S.prefs.diet=r.d;if(r.kv)S.prefs.keto=r.kv;toast('Рекомендуем: '+(r.d==='keto'?'Кето · '+KETO_V[r.kv].n.toLowerCase():DIETS[r.d].n))}
+  else{if(hasHealth()&&k==='keto'){toast('🔒 Кето недоступна при отмеченных противопоказаниях. Выберите сбалансированную диету.');return}S.prefs.auto=false;S.prefs.diet=k}
+  markDirty();renderDiets();renderPlanDirty();
+}
+function openDiet(k){
+  const D=DIETS[k];const sample=['b','l','s','d'].map(s=>{const dk=k==='keto'?'keto-'+S.prefs.keto:k;const L=RECIPES.filter(r=>r.m.includes(s)&&dietOk(r,dk,0));return L[Math.floor(Math.random()*L.length)]}).filter(Boolean);
+  const locked=hasHealth()&&k==='keto';
+  let extra='';
+  if(k==='keto')extra=`<div class="m-sec"><h4>Варианты кето</h4><div class="opts">${Object.entries(KETO_V).map(([v,o])=>`<button type="button" class="opt" role="radio" data-kv="${v}" aria-checked="${S.prefs.keto===v}">${o.n}<small>Чистые углеводы: ${o.c} · ${o.w}</small></button>`).join('')}</div></div>
+    <div class="m-sec"><h4>Кето-продукты: можно</h4><div class="prod-grid">${KETO_YES.map(([e,n])=>`<div class="prod"><span>${e}</span>${n}</div>`).join('')}</div></div>
+    <div class="m-sec"><h4>Кето-продукты: нельзя</h4><div class="prod-grid">${KETO_NO.map(([e,n])=>`<div class="prod no"><span>${e}</span>${n}</div>`).join('')}</div></div>
+    <div class="note">Первые 14 дней — фаза адаптации: возможен «кето-грипп» (слабость, головная боль). Помогают вода, соль и магний. Строгое кето — не дольше 3 месяцев подряд.</div>`;
+  openModal(`<div class="ph lg" style="--h:${D.h};border-radius:0"><span>${D.em}</span></div><div class="m-body">
+    <h2 id="mTitle">${D.n}</h2><p class="muted">${D.short}. Б/Ж/У: ${D.mac} %</p>
+    <div class="m-cols"><div class="m-sec"><h4>Принцип</h4><p>${D.principle}</p></div><div class="m-sec"><h4>Кому подходит</h4><p>${D.who}</p></div></div>
+    <div class="m-sec"><h4>Противопоказания</h4><p>${D.contra}</p></div>
+    <div class="m-cols"><div class="m-sec"><h4>✅ Можно</h4><p>${D.yes}</p></div><div class="m-sec"><h4>🚫 Нельзя / ограничить</h4><p>${D.no}</p></div></div>
+    ${extra}
+    <div class="m-sec"><h4>Пример дня</h4><div class="rec-grid">${sample.map((r,i)=>`<button type="button" class="rec" data-recipe="${r.id}">${photo(r)}<div class="rb"><span class="meta">${SLOTN[['b','l','s','d'][i]]}</span><h4>${esc(r.t)}</h4><span class="meta">${r.kcal} ккал</span></div></button>`).join('')}</div></div>
+    <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap"><button type="button" class="btn btn-primary" data-choose="${k}" ${locked?'disabled':''}>${locked?'🔒 Недоступно':'Выбрать эту диету'}</button></div>
+  </div>`);
+}
+
+/* ---------- wizard ---------- */
+function renderWizard(){
+  const st=S.step,p=S.profile,pr=S.prefs;
+  $$('#wSteps button').forEach(b=>{const n=+b.dataset.step;b.classList.toggle('on',n===st);b.classList.toggle('done',n<st);b.setAttribute('aria-selected',n===st)});
+  $$('.step').forEach(el=>el.classList.toggle('on',+el.dataset.panel===st));
+  $('#wProg').style.width=(st/4*100)+'%';
+  $('#wPrev').style.visibility=st===1?'hidden':'visible';
+  $('#wNext').textContent=st===4?(S.plan?'Пересчитать план 🌸':'Составить план 🌸'):'Далее →';
+  ['age','height'].forEach(k=>{$('#'+k).value=p[k];$('#'+k+'R').value=p[k]});
+  $('#weight').value=p.weight;$('#kg').value=p.kg;$('#goalW').value=r1(p.weight-p.kg);
+  opts($('#actOpts'),Object.entries(ACT).map(([k,a])=>[k,a.n,a.s]),p.activity,v=>{p.activity=+v;afterProfile();renderWizard()});
+  opts($('#goalOpts'),[['loss','Снизить вес'],['maintain','Удержать вес'],['both','Снизить, затем удержать']],p.goal,v=>{p.goal=v;afterProfile();renderWizard()});
+  opts($('#paceOpts'),[['0.25','Мягкий','−0,25 кг/нед'],['0.5','Оптимальный','−0,5 кг/нед'],['0.75','Активный','−0,75 кг/нед']],p.pace,v=>{p.pace=+v;afterProfile();renderWizard()});
+  const maint=p.goal==='maintain';
+  $('#paceGroup').style.display=maint?'none':'';$('#kgField').style.opacity=maint?.45:1;$('#goalWField').style.opacity=maint?.45:1;
+  $('#kg').disabled=maint;$('#goalW').disabled=maint;
+  chips($('#healthChips'),HEALTH,p.health,()=>{
+    if(hasHealth()){let msg=[];if(pr.diet==='keto'){pr.diet='dash';pr.auto=false;msg.push('кето')}if(pr.fasting!=='off'){pr.fasting='off';msg.push('интервальное голодание')}if(msg.length)toast('Отключено по соображениям безопасности: '+msg.join(' и '))}
+    afterProfile();renderWizard();renderDiets();},'warn');
+  chips($('#exclChips'),EXCL,pr.excl,()=>{markDirty();renderWizard();renderDiets();renderPlanDirty()});
+  chips($('#allergyChips'),EXCL.filter(e=>e[0]!=='spicy'&&e[0]!=='meat'&&e[0]!=='pork'),pr.allergy,()=>{markDirty();renderWizard();renderDiets();renderPlanDirty()},'warn');
+  chips($('#cuisineChips'),Object.entries(CUIS),pr.cuisines,()=>{markDirty();renderWizard()});
+  opts($('#sweetOpts'),[['daily','Полезный десерт каждый день'],['some','Иногда'],['none','Не нужно']],pr.sweets,v=>{pr.sweets=v;markDirty();renderWizard()});
+  $('#freeExcl').value=pr.freeExcl;
+  opts($('#mealOpts'),[['3','3','без перекусов'],['4','4','с перекусом'],['5','5','два перекуса']],pr.meals,v=>{pr.meals=+v;markDirty();renderWizard();renderPlanDirty()});
+  opts($('#cookOpts'),[['15','До 15 минут'],['30','До 30 минут'],['any','Без ограничений']],pr.cook,v=>{pr.cook=v;markDirty();renderWizard()});
+  opts($('#batchOpts'),[['0','Нет, готовлю каждый день'],['1','Да','обед и ужин повторяются 2 дня']],pr.batch?'1':'0',v=>{pr.batch=v==='1';markDirty();renderWizard()});
+  opts($('#budgetOpts'),[['e','Эконом'],['m','Средний'],['p','Без ограничений']],pr.budget,v=>{pr.budget=v;markDirty();renderWizard()});
+  opts($('#servOpts'),[1,2,3,4,5,6].map(n=>[String(n),String(n)]),pr.servings,v=>{pr.servings=+v;save();renderWizard();renderShop()});
+  $('#wake').value=pr.wake;$('#sleep').value=pr.sleep;
+  renderCalc();
+}
+function afterProfile(){markDirty();renderCalc();renderPlanDirty()}
+function renderCalc(){
+  const p=S.profile,c=calc();const maint=p.goal==='maintain';
+  $('#kg').max=c.maxLose;$('#kgHint').textContent=`Безопасный максимум: ${dec(c.maxLose)} кг (ИМТ ≥ 18,5)`;
+  $('#goalW').min=c.minW;$('#goalW').max=p.weight-1;
+  const pos=b=>clamp((b-15)/25*100,0,100);
+  let notes='';
+  if(!maint&&!c.valid){notes+=p.kg>c.maxLose?`<div class="note err">При такой цели ИМТ опустится ниже 18,5. Безопасный максимум — ${dec(c.maxLose)} кг (желаемый вес от ${dec(c.minW)} кг).</div>`:`<div class="note err">Укажите от 1 кг.</div>`}
+  if(!maint&&c.valid&&c.big)notes+=`<div class="note">Разобьём цель на этапы по месяцу — так результат надёжнее.</div>`;
+  c.notes.forEach(n=>notes+=`<div class="note blue">${n}</div>`);
+  if(hasHealth())notes+=`<div class="note err">Отмечены противопоказания: доступны сбалансированные диеты с поддерживающей калорийностью, кето и интервальное голодание отключены.</div>`;
+  const endDate=isFinite(c.weeks)?new Date(Date.now()+c.weeks*7*864e5).toLocaleDateString('ru-RU',{day:'numeric',month:'long',year:'numeric'}):'—';
+  $('#calcBox').innerHTML=`<h3>🧮 Ваш расчёт</h3>
+    <div class="calc-grid">
+      <div class="stat"><span>ИМТ сейчас</span><b>${dec(c.bmi)}</b><small>${bmiCat(c.bmi)}</small></div>
+      <div class="stat"><span>ИМТ при цели</span><b>${maint?'—':dec(c.bmiGoal)}</b><small>${maint?'режим удержания':bmiCat(c.bmiGoal)+' · '+dec(c.goalW)+' кг'}</small></div>
+      <div class="stat"><span>${maint?'Калорий для удержания':'Калорий для снижения'}</span><b>${fmt(maint?c.maintNow:c.kcal)}</b><small>ккал в день</small></div>
+      <div class="stat"><span>Для удержания цели</span><b>${fmt(c.maint)}</b><small>ккал в день</small></div>
+      ${maint?'':`<div class="stat"><span>Срок до цели</span><b>${isFinite(c.weeks)?Math.ceil(c.weeks)+' нед.':'—'}</b><small>≈ к ${endDate}</small></div>
+      <div class="stat"><span>За 30 дней плана</span><b>−${dec(c.month)} кг</b><small>темп ${dec(c.pace)} кг/нед</small></div>`}
+    </div>
+    <div class="bmi-scale" aria-hidden="true"><i style="left:${pos(c.bmi)}%" title="Сейчас"></i>${maint?'':`<i class="goal" style="left:${pos(c.bmiGoal)}%" title="Цель"></i>`}</div>
+    <div class="bmi-legend"><span>15</span><span>18,5</span><span>25</span><span>30</span><span>40</span></div>
+    <p class="small muted" style="margin:6px 0 0">Чёрная метка — сейчас, зелёная — цель. Базовый обмен ${fmt(c.bmr)} ккал, расход ${fmt(c.tdee)} ккал.</p>${notes}`;
+}
+function validStep1(){const c=calc();const p=S.profile;
+  if(p.age<18||p.age>65||p.height<140||p.height>200||p.weight<40||p.weight>200){toast('Проверьте возраст, рост и вес');return false}
+  if(!c.valid){toast('Цель небезопасна — уменьшите количество килограммов');$('#kg').focus();return false}return true}
+function goStep(n){if(n>1&&S.step===1&&!validStep1())return;S.step=clamp(n,1,4);save();renderWizard();const w=$('#wizard');if(w.getBoundingClientRect().top<0)w.scrollIntoView({behavior:reduceMotion?'auto':'smooth'})}
+function bindNum(id,key,min,max){
+  const n=$('#'+id),r=$('#'+id+'R');
+  const set=(v,src)=>{
+    if(key==='goalW'){S.profile.kg=Math.max(0,Math.round((S.profile.weight-v)*2)/2);$('#kg').value=S.profile.kg}
+    else{S.profile[key]=v}
+    if(r&&src!==r)r.value=v;if(src!==n)n.value=v;
+    if(key!=='goalW')$('#goalW').value=r1(S.profile.weight-S.profile.kg);
+    afterProfile();
+  };
+  n.addEventListener('input',()=>{const v=parseFloat(String(n.value).replace(',','.'));const lo=typeof min==='function'?min():min,hi=typeof max==='function'?max():max;if(!isNaN(v)&&v>=lo&&v<=hi){n.classList.remove('bad');set(v,n)}else n.classList.add('bad')});
+  n.addEventListener('change',()=>{let v=parseFloat(String(n.value).replace(',','.'));const lo=typeof min==='function'?min():min,hi=typeof max==='function'?max():max;if(isNaN(v))v=key==='goalW'?S.profile.weight-S.profile.kg:S.profile[key];v=clamp(v,lo,hi);n.classList.remove('bad');set(v,null)});
+  if(r)r.addEventListener('input',()=>set(+r.value,r));
+}
+
+/* ---------- plan UI ---------- */
+function renderPlanDirty(){const b=$('#dirtyBar');if(b)b.style.display=S.plan&&S.dirty?'flex':'none'}
+function renderPlan(){
+  const box=$('#planBox');const pl=S.plan;
+  if(!pl){box.innerHTML=`<div class="card empty"><div class="big">🌱</div><h3>План пока не составлен</h3><p class="muted">Ответьте на несколько вопросов — это займёт пару минут.</p><a class="btn btn-primary" href="#wizard" data-start>Составить мой план</a></div>`;return}
+  S.sel=clamp(S.sel||0,0,29);
+  const c=calc();
+  const phaseN={loss:S.profile.goal==='maintain'?'удержание веса':'снижение веса',maintenance:'переход к удержанию (+125 ккал в неделю)',keto_exit:'выход из кето (low-carb → средиземноморская)'}[pl.phase];
+  let months='';
+  if(pl.phase==='loss'&&S.profile.goal!=='maintain'&&pl.pace>0){let w=pl.startW;const arr=[];for(let m=1;m<=12&&w>pl.goalW;m++){w=Math.max(pl.goalW,w-pl.pace*4.3);arr.push(`<span>Месяц ${m}: ${dec(w)} кг</span>`)}months=`<div class="months">${arr.join('')}</div>`}
+  const keto=pl.dk.startsWith('keto')&&pl.phase!=='keto_exit';
+  const lastW=S.weights.length?[...S.weights].sort((a,b)=>a.d<b.d?-1:1).pop().w:pl.startW;
+  const reached=S.profile.goal!=='maintain'&&lastW<=pl.goalW&&pl.phase==='loss';
+  box.innerHTML=`
+  <div class="dirty" id="dirtyBar" style="display:${S.dirty?'flex':'none'}"><span>✏️ Вы изменили ответы анкеты. Пересчитать план с новыми параметрами?</span><button class="btn btn-primary btn-sm" type="button" data-act="regen">Пересчитать план</button></div>
+  ${reached?`<div class="dirty" style="background:var(--green-soft);border-color:var(--green)"><span>🎉 Цель достигнута! Перейдём в фазу удержания: калорийность будет плавно расти на 100–150 ккал в неделю.</span><button class="btn btn-primary btn-sm" type="button" data-act="maint">Перейти к удержанию</button></div>`:''}
+  <div class="card plan-sum">
+    <div class="donut-wrap">${donut(pl.prot,pl.fat,pl.carb)}<ul class="legend">${(()=>{const P=macroPct(pl.prot,pl.fat,pl.carb);return `<li><i style="background:var(--green)"></i>Белки ${pl.prot} г · ${P[0]}%</li><li><i style="background:var(--yellow)"></i>Жиры ${pl.fat} г · ${P[1]}%</li><li><i style="background:var(--blue)"></i>Углеводы ${pl.carb} г · ${P[2]}%</li>`})()}</ul></div>
+    <div><h3 style="margin-bottom:6px">Цель: ${fmt(pl.kcal)} ккал в день</h3>
+      <p class="muted" style="margin:0">Диета: <b>${esc(pl.phase==='keto_exit'?'Выход из кето':dietName(pl.dk))}</b>${pl.fasting!=='off'?` + ${pl.fasting==='16'?'16/8':'14/10'}`:''} · Фаза: ${phaseN}<br>Старт: ${dLong(addDays(pl.start,0))} · ${pl.meals} приёма пищи в день</p>
+      ${months?`<p class="small" style="margin:10px 0 0"><b>Прогноз по месяцам до цели ${dec(pl.goalW)} кг:</b></p>${months}`:''}</div>
+    <div class="plan-actions">
+      <button class="btn btn-ghost btn-sm" type="button" data-act="week">↻ Обновить эту неделю</button>
+      <button class="btn btn-ghost btn-sm" type="button" data-act="regen">↻ Весь план заново</button>
+      <button class="btn btn-ghost btn-sm" type="button" data-act="next">📆 Следующий месяц</button>
+      ${keto?'<button class="btn btn-ghost btn-sm" type="button" data-act="ketoexit">🥗 Выйти из кето</button>':''}
+      <button class="btn btn-primary btn-sm" type="button" data-act="print">⬇ PDF / печать</button>
+    </div>
+  </div>
+  <div class="cal" id="cal" role="listbox" aria-label="Дни плана">${pl.days.map((day,d)=>{
+    const t=dayTotals(d);const dt=addDays(pl.start,d);const eaten=day.meals.filter((m,i)=>S.eaten[d+'-'+i]).length;const adapt=keto&&d<14&&pl.dk!=='keto-cyclic'||keto&&pl.dk==='keto-cyclic'&&d<14;
+    return `<button type="button" class="cal-day ${d===S.sel?'on':''}" role="option" aria-selected="${d===S.sel}" data-day="${d}"><span class="dn">День ${d+1}</span><span class="dd">${dShort(dt)}</span><span class="em" aria-hidden="true">${day.meals.map(m=>m.id?RX[m.id].em:'').join('')}</span><span class="dk">${fmt(t.kcal)} ккал</span>${adapt?'<span class="tag" title="Фаза адаптации"></span>':''}<i class="prog" style="--p:${Math.round(eaten/day.meals.length*100)}"></i></button>`}).join('')}</div>
+  ${keto?'<div class="cal-legend"><span><i></i>Фаза адаптации к кето (дни 1–14)</span></div>':''}
+  <div class="day-grid" style="margin-top:22px"><div id="dayView"></div><aside class="side" id="daySide"></aside></div>`;
+  renderDay();
+  const on=$('.cal-day.on');if(on&&window.innerWidth<=640){const cal=$('#cal');cal.scrollLeft=on.offsetLeft-16}
+}
+function renderDay(){
+  const pl=S.plan;if(!pl)return;const d=S.sel;const day=pl.days[d];const dt=addDays(pl.start,d);const dk=dayDiet(d);const t=dayTotals(d);
+  const keto=dk.startsWith('keto');const lim=NETLIM[dk]&&!(dk==='keto-cyclic'&&d%7>=5)?NETLIM[dk]:null;
+  const adapt=keto&&d<14&&pl.phase!=='keto_exit';
+  const vit=vitamins(d);
+  $('#dayView').innerHTML=`<div class="day-head"><h3>День ${d+1} · <span style="text-transform:capitalize">${dLong(dt)}</span></h3>
+    <div style="display:flex;gap:6px"><button class="icon-btn" type="button" data-nav="-1" aria-label="Предыдущий день" ${d===0?'disabled':''}>‹</button><button class="icon-btn" type="button" data-nav="1" aria-label="Следующий день" ${d===29?'disabled':''}>›</button></div></div>
+    ${pl.sch.fast?`<div class="window-bar">⏱ Окно питания ${toHM(pl.sch.start)}–${toHM(pl.sch.end)}</div>`:''}
+    ${dk==='keto-cyclic'&&d%7>=5?'<div class="note blue" style="margin:0 0 12px">Углеводный день циклического кето: 100–150 г углеводов из круп, фруктов и бобовых.</div>':''}
+    ${adapt?`<div class="note" style="margin:0 0 12px">🌱 <b>Фаза адаптации (день ${d+1} из 14).</b> Возможна слабость или головная боль — «кето-грипп». Пейте больше воды, добавляйте соль или бульон, не забывайте про магний.</div>`:''}
+    <div class="meals">${day.meals.map((m,i)=>{const r=RX[m.id];if(!r)return `<div class="meal"><div class="mi"><span class="slot">${SLOTN[m.s]} · ${toHM(m.t)}</span><h4>Нет подходящих блюд</h4><p class="kb">Ослабьте исключения в анкете.</p></div></div>`;
+      const k=d+'-'+i;const e=!!S.eaten[k];
+      return `<article class="meal ${e?'eaten':''}">${photo(r,'sm')}<div class="mi"><span class="slot">${SLOTN[m.s]} · ${toHM(m.t)}</span><h4>${esc(r.t)}</h4>
+      <div class="kb">≈ ${portionG(r,m.f)} г · ${fmt(r.kcal*m.f)} ккал · Б ${Math.round(r.p*m.f)} · Ж ${Math.round(r.f*m.f)} · У ${Math.round(r.c*m.f)}${keto?` · чистые У ${Math.round(r.net*m.f)}`:''}</div>
+      ${(()=>{const P=macroPct(r.p,r.f,r.c);return `<div class="kb">Б ${P[0]}% · Ж ${P[1]}% · У ${P[2]}% калорий</div>`})()}
+      <div class="btns"><button class="btn btn-ghost btn-sm" type="button" data-recipe="${r.id}" data-f="${m.f}">Рецепт</button><button class="btn btn-ghost btn-sm" type="button" data-swap="${d}-${i}">Заменить ↻</button><button class="btn btn-ghost btn-sm eat" type="button" data-eat="${k}" aria-pressed="${e}">Съедено ✓</button></div></div></article>`}).join('')}</div>`;
+  const DP=macroPct(t.p,t.f,t.c);
+  const bar=(l,v,max,col,pc)=>`<div class="bar"><div class="bl"><span>${l}${pc!=null?` · <b>${pc}%</b>`:''}</span><span>${fmt(v)} / ${fmt(max)}</span></div><div class="bt"><i style="width:${clamp(v/max*100,0,100)}%;background:${col}"></i></div></div>`;
+  const eatenN=day.meals.filter((m,i)=>S.eaten[d+'-'+i]).length;
+  const tgt=dayTargets(pl,d);
+  const water=S.water[d]||0;
+  let vh='';
+  if(vit.blocked)vh='<p class="small muted">Персональный график не формируется — пожалуйста, обсудите приём витаминов с врачом.</p>';
+  else vh=`<ul class="mini-vit">${vit.items.filter(i=>i.on).map(it=>`<li><label><input type="checkbox" data-take="${d}-${it.id}" ${S.taken[d+'-'+it.id]?'checked':''}><span><b>${toHM(it.t)}</b> · ${esc(it.n)} — ${esc(it.dose)}</span></label></li>`).join('')}</ul>`;
+  $('#daySide').innerHTML=`
+    <div class="card"><h4 style="font-family:var(--sans);font-size:1rem;margin-bottom:8px">КБЖУ дня</h4>
+      ${bar('Калории',t.kcal,tgt,'var(--green)')}${bar('Белки, г',t.p,Math.round(tgt*pl.pct[0]/400),'var(--green)',DP[0])}${bar('Жиры, г',t.f,Math.round(tgt*pl.pct[1]/900),'var(--yellow)',DP[1])}${bar('Углеводы, г',t.c,Math.max(1,Math.round(tgt*pl.pct[2]/400)),'var(--blue)',DP[2])}
+      <p class="small muted" style="margin:6px 0 0">% — доля калорий дня из белков, жиров и углеводов (цель: ${pl.pct[0]} / ${pl.pct[1]} / ${pl.pct[2]} %)</p>
+      ${lim?`<div class="note ${t.net<=lim?'ok':'err'}" style="margin-top:12px">Чистые углеводы: <b>${Math.round(t.net)} г</b> из ${lim} г · углеводы − клетчатка</div>`:''}
+      <p class="small muted" style="margin:10px 0 0">Съедено: ${eatenN} из ${day.meals.length} приёмов пищи</p></div>
+    <div class="card"><h4 style="font-family:var(--sans);font-size:1rem;margin-bottom:8px">💊 Витамины сегодня</h4>${vh}<a class="small" href="#vitamins">Весь график →</a></div>
+    <div class="card"><h4 style="font-family:var(--sans);font-size:1rem;margin-bottom:8px">💧 Вода: ${water} из 8 стаканов</h4><div class="water">${[...Array(8)].map((_,i)=>`<button type="button" class="${i<water?'on':''}" data-water="${i+1}" aria-label="${i+1} стакан">💧</button>`).join('')}</div></div>
+    <div class="card tip"><b>🌼 Совет дня</b><p class="small" style="margin:6px 0 0">${TIPS[d%TIPS.length]}</p></div>`;
+}
+function openRecipe(id,f=1){
+  const r=RX[id];if(!r)return;let serv=1;const fav=S.favs.includes(id);
+  const fq=(q,u)=>{if(u==='г'||u==='мл'){if(q>=1000)return dec(q/1000)+(u==='г'?' кг':' л');return (q<20?Math.round(q):Math.round(q/5)*5)+' '+u}if(u==='шт')return String(Math.max(0.5,Math.round(q*2)/2)).replace('.',',')+' шт';return Math.max(1,Math.round(q))+' '+u};
+  const diff=r.tm<=15?'Легко':r.tm<=35?'Средне':'Нужно время';
+  const draw=()=>{
+    $('#ingList').innerHTML=r.ing.map((i,k)=>`<li><label><input type="checkbox"><span>${esc(i.n)}</span><span class="q">${fq(i.q*f*serv,i.u)}</span></label></li>`).join('');
+    $('#servN').textContent=serv;
+  };
+  openModal(`${photo(r,'lg')}<div class="m-body">
+    <h2 id="mTitle">${esc(r.t)}</h2>
+    <div class="badges"><span class="badge blue">⏱ ${r.tm} мин</span><span class="badge blue">${diff}</span><span class="badge">${CUIS[r.cu]}</span>${r.d.includes('K')?'<span class="badge fit">Кето</span>':''}</div>
+    ${(()=>{const P=macroPct(r.p,r.f,r.c);return `<div class="kbju"><div><b>${fmt(r.kcal*f)}</b><small>ккал</small></div><div><b>${Math.round(r.p*f)}</b><small>белки, г · ${P[0]}%</small></div><div><b>${Math.round(r.f*f)}</b><small>жиры, г · ${P[1]}%</small></div><div><b>${Math.round(r.c*f)}</b><small>углеводы, г · ${P[2]}%</small></div></div>`})()}
+    <p class="small muted" style="margin:8px 0 0">На 1 порцию${f!==1?` (в вашем плане — ${dec(f)} базовой порции)`:''}. Чистые углеводы: ${Math.round(r.net*f)} г · кальций ≈ ${Math.round(r.ca*f)} мг.</p>
+    <div class="m-cols">
+      <div class="m-sec"><h4 style="display:flex;justify-content:space-between;align-items:center">Ингредиенты <span class="stepper" aria-label="Порции"><button type="button" id="servM" aria-label="Меньше порций">−</button><b id="servN">1</b><button type="button" id="servP" aria-label="Больше порций">+</button></span></h4><ul class="ing" id="ingList"></ul></div>
+      <div class="m-sec"><h4>Приготовление</h4><ol class="steps">${r.st.map(s=>`<li>${esc(s)}</li>`).join('')}</ol></div>
+    </div>
+    <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
+      <button type="button" class="btn btn-ghost" id="favBtn" aria-pressed="${fav}">${fav?'❤ В избранном':'♡ В избранное'}</button>
+      <button type="button" class="btn btn-primary" id="cookBtn">🍳 Режим «Готовлю»</button>
+    </div></div>`);
+  draw();
+  $('#servM').onclick=()=>{serv=Math.max(1,serv-1);draw()};$('#servP').onclick=()=>{serv=Math.min(6,serv+1);draw()};
+  $('#favBtn').onclick=e=>{toggleFav(id);const on=S.favs.includes(id);e.currentTarget.textContent=on?'❤ В избранном':'♡ В избранное';e.currentTarget.setAttribute('aria-pressed',on)};
+  $('#cookBtn').onclick=async e=>{const m=$('#modal');const on=m.classList.toggle('cooking');e.currentTarget.textContent=on?'✓ Выйти из режима':'🍳 Режим «Готовлю»';
+    if(on){try{if('wakeLock' in navigator)wakeLock=await navigator.wakeLock.request('screen')}catch(err){}toast('Крупный шрифт включён, экран не будет гаснуть')}else releaseWake()};
+}
+function toggleFav(id){const i=S.favs.indexOf(id);i>=0?S.favs.splice(i,1):S.favs.push(id);save();renderRecipes()}
+function openSwap(d,i){
+  const pl=S.plan;const m=pl.days[d].meals[i];const cur=RX[m.id];const dk=dayDiet(d);const share=SLOTS[pl.meals][i][1];const kc=dayTargets(pl,d);
+  const ids=pl.days[d].meals.map(x=>x.id);
+  let L=pool(m.s,dk,d).filter(r=>!ids.includes(r.id));
+  const tot=dayTotals(d);
+  const alts=L.map(r=>({r,f:factorFor(r,kc*share,m.s)})).sort((a,b)=>Math.abs(a.r.p*a.f-(cur?cur.p*m.f:0))-Math.abs(b.r.p*b.f-(cur?cur.p*m.f:0))).slice(0,3);
+  openModal(`<div class="m-body"><h2 id="mTitle">Заменить: ${SLOTN[m.s].toLowerCase()}</h2>
+    ${cur?`<p class="muted">Сейчас: ${esc(cur.t)} — ${fmt(cur.kcal*m.f)} ккал · Б ${Math.round(cur.p*m.f)} · Ж ${Math.round(cur.f*m.f)} · У ${Math.round(cur.c*m.f)}</p>`:''}
+    ${alts.length?`<div class="alts">${alts.map(({r,f})=>{const nk=tot.kcal-(cur?cur.kcal*m.f:0)+r.kcal*f;const diff=Math.round((nk/kc-1)*100);
+      return `<div class="alt-card">${photo(r)}<h4>${esc(r.t)}</h4><span class="small muted">${fmt(r.kcal*f)} ккал · Б ${Math.round(r.p*f)} · Ж ${Math.round(r.f*f)} · У ${Math.round(r.c*f)}</span><span class="small">День: ${fmt(nk)} ккал (${diff>0?'+':''}${diff}%)</span><div style="display:flex;gap:6px;margin-top:auto"><button class="btn btn-ghost btn-sm" type="button" data-recipe="${r.id}" data-f="${f}">Рецепт</button><button class="btn btn-primary btn-sm" type="button" data-pick="${d}-${i}-${r.id}-${f}">Выбрать</button></div></div>`}).join('')}</div>`
+      :'<p>Подходящих альтернатив не нашлось — попробуйте ослабить ограничения в анкете.</p>'}
+  </div>`);
+}
+
+/* ---------- recipes gallery ---------- */
+let recLimit=12;
+function renderRecipes(){
+  const q=$('#rSearch').value.trim().toLowerCase(),dt=$('#rDiet').value,ml=$('#rMeal').value,tm=$('#rTime').value,cu=$('#rCuisine').value;
+  const fav=$('#rFav').getAttribute('aria-pressed')==='true',mine=$('#rMine').getAttribute('aria-pressed')==='true';
+  const L=RECIPES.filter(r=>{
+    if(q&&!(r.t+' '+r.ing.map(i=>i.n).join(' ')).toLowerCase().includes(q))return false;
+    if(dt&&!(dt==='veg'?isVeg(r):r.d.includes(dt)))return false;
+    if(ml&&!r.m.includes(ml))return false;if(tm&&r.tm>+tm)return false;if(cu&&r.cu!==cu)return false;
+    if(fav&&!S.favs.includes(r.id))return false;if(mine&&excluded(r))return false;return true});
+  $('#rCount').textContent=`Найдено: ${L.length}`;
+  const map={K:'Кето',L:'Low-carb',M:'Средизем.',H:'Белковая',D:'DASH'};
+  $('#recGrid').innerHTML=L.slice(0,recLimit).map(r=>`<div class="rec-wrap"><button type="button" class="fav" data-fav="${r.id}" aria-pressed="${S.favs.includes(r.id)}" aria-label="${S.favs.includes(r.id)?'Убрать из избранного':'В избранное'}: ${esc(r.t)}">${S.favs.includes(r.id)?'❤':'♡'}</button>
+    <button type="button" class="rec" data-recipe="${r.id}" style="width:100%;height:100%">${photo(r)}<div class="rb"><h4>${esc(r.t)}</h4><span class="meta">⏱ ${r.tm} мин · ${r.kcal} ккал · ${r.m.map(m=>SLOTN[m]).join(', ')}</span>
+    <div class="badges">${r.d.slice(0,3).map(x=>`<span class="badge ${x==='K'?'fit':''}">${map[x]}</span>`).join('')}</div></div></button></div>`).join('')||'<p class="muted">Ничего не найдено — измените фильтры.</p>';
+  $('#rMore').style.display=L.length>recLimit?'':'none';
+}
+
+/* ---------- vitamins UI ---------- */
+function renderVitamins(){
+  const box=$('#vitBox');const pl=S.plan;
+  if(!pl){box.innerHTML=`<div class="card empty"><div class="big">💊</div><h3>График появится вместе с планом</h3><p class="muted">Добавки подбираются по диете, меню и возрасту.</p><a class="btn btn-primary" href="#wizard" data-start>Составить план</a></div>`;return}
+  const d=S.sel;const v=vitamins(d);
+  if(v.blocked){box.innerHTML=`<div class="card empty"><div class="big">🩺</div><h3>Персональный график не формируется</h3><p class="muted" style="max-width:560px;margin:0 auto 1em">В анкете отмечены состояния, при которых приём БАДов нужно согласовать с врачом: беременность, ГВ, хронические заболевания или постоянный приём лекарств. Пожалуйста, обратитесь к специалисту и по возможности сдайте анализы.</p></div>`;return}
+  const sch=v.sch;const span=sch.z-sch.w;const pos=t=>clamp((t-sch.w)/span*100,0,100);
+  const meals=pl.days[d].meals;
+  let taken=0,exp=0;const from=Math.max(0,d-6);
+  for(let x=from;x<=d;x++){const vv=vitamins(x);vv.items.filter(i=>i.on).forEach(i=>{exp++;if(S.taken[x+'-'+i.id])taken++})}
+  const pct=exp?Math.round(taken/exp*100):0;
+  box.innerHTML=`<div class="vit-top"><h3 style="margin:0">День ${d+1} · ${dLong(addDays(pl.start,d))}</h3>
+    <div style="display:flex;gap:8px;align-items:center"><button class="icon-btn" type="button" data-nav="-1" aria-label="Предыдущий день" ${d===0?'disabled':''}>‹</button><button class="icon-btn" type="button" data-nav="1" aria-label="Следующий день" ${d===29?'disabled':''}>›</button>
+    <span class="ring">${donutPct(pct)} соблюдение за неделю</span></div></div>
+    <div class="card" style="margin-top:14px;padding:16px 18px"><div class="timeline" aria-label="Таймлайн дня">
+      <div class="line"></div>${sch.fast?`<div class="win" style="left:${pos(sch.start)}%;width:${pos(sch.end)-pos(sch.start)}%"></div>`:''}
+      ${meals.map(m=>`<div class="tl-pt meal" style="left:${pos(m.t)}%"><i>${m.id?RX[m.id].em:'🍽️'}</i>${toHM(m.t)}</div>`).join('')}
+      ${v.items.filter(i=>i.on).map(i=>`<div class="tl-pt vit" style="left:${pos(i.t)}%" title="${esc(i.n)} · ${toHM(i.t)}"><i style="background:${i.c}"></i></div>`).join('')}
+      <span class="tl-end" style="left:0">☀️ ${toHM(sch.w)}</span><span class="tl-end" style="right:0">🌙 ${toHM(sch.z)}</span>
+    </div><p class="small muted" style="margin:0">Сверху — приёмы пищи, снизу — добавки (цветные точки)${sch.fast?'; пунктир — окно питания':''}.</p></div>
+    ${v.warns.map(w=>`<div class="note err">${w}</div>`).join('')}
+    <div class="note ${v.calInfo.none?'ok':'blue'}" style="margin-bottom:18px">🦴 <b>Кальций:</b> ${v.calInfo.text}</div>
+    <div class="vit-grid">${v.items.map(i=>`<article class="vit ${i.on?'':'off'}" style="--c:${i.c}"><div class="vh"><div><h4>${esc(i.n)}</h4><div class="dose">${esc(i.dose)}</div></div>
+      <button type="button" class="switch" role="switch" aria-checked="${i.on}" data-vtoggle="${i.id}" aria-label="${i.on?'Отключить':'Включить'}: ${esc(i.n)}"></button></div>
+      <div class="when"><span>🕐 ${toHM(i.t)}</span><span>${esc(i.food)}</span>${i.optional?'<span>по анализу</span>':''}</div><p>${esc(i.why)}</p>
+      <div class="row">${i.on?`<label class="tk"><input type="checkbox" data-take="${d}-${i.id}" ${S.taken[d+'-'+i.id]?'checked':''}>Принято</label>`:'<span class="small muted">Отключено</span>'}${i.custom?`<button class="linkbtn" type="button" data-vdel="${i.id.slice(1)}">Удалить</button>`:''}</div></article>`).join('')}</div>
+    <div class="card" style="margin-top:22px"><h4 style="font-family:var(--sans)">➕ Добавить свою добавку</h4>
+      <form class="custom-form" id="customForm"><div class="field"><label for="cvN">Название</label><input id="cvN" type="text" required maxlength="40" placeholder="Например, цинк"></div>
+      <div class="field"><label for="cvD">Доза</label><input id="cvD" type="text" required maxlength="30" placeholder="10 мг"></div>
+      <div class="field"><label for="cvT">Время</label><input id="cvT" type="time" required value="13:00"></div><button class="btn btn-primary" type="submit">Добавить</button></form></div>
+    <div class="card" style="margin-top:16px"><h4 style="font-family:var(--sans)">Правила совместимости, которые учитывает график</h4><ul class="rules">
+      <li>Железо и кальций — не ближе 2 часов; кальций и цинк — тоже 2 часа.</li><li>Кальций — не более 500 мг элементарного за приём и 1000 мг в сутки из добавок.</li>
+      <li>Железо — не вместе с кофе и чаем; кальций и магний — в разные приёмы.</li><li>D3, Омега-3 и мультивитамин — только с едой.</li>
+      <li>Магний — вечером; B12 и мультивитамин — утром (могут бодрить).</li><li>Псиллиум — отдельно от других добавок минимум на 2 часа.</li>
+      <li>Левотироксин и кальций — ≥ 4 часа; при приёме лекарств график только после консультации врача.</li><li>При интервальном голодании все добавки — в окне питания, с едой.</li></ul></div>`;
+}
+function donutPct(p){const R=15,C=2*Math.PI*R,l=p/100*C;return `<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="${R}" fill="none" stroke="var(--line)" stroke-width="5"/><circle cx="20" cy="20" r="${R}" fill="none" stroke="var(--green)" stroke-width="5" stroke-dasharray="${l} ${C-l}" transform="rotate(-90 20 20)" stroke-linecap="round"/></svg><span>${p}%</span>`}
+
+/* ---------- shopping ---------- */
+function shopList(w){
+  const pl=S.plan;const from=w*7,to=Math.min(30,from+7);const map={};const sv=S.prefs.servings||1;
+  for(let d=from;d<to;d++)pl.days[d].meals.forEach(m=>{const r=RX[m.id];if(!r)return;r.ing.forEach(i=>{const k=i.n+'|'+i.u;if(!map[k])map[k]={n:i.n,u:i.u,q:0,cat:i.cat};map[k].q+=i.q*m.f*sv})});
+  const g={};Object.values(map).forEach(it=>{(g[it.cat]=g[it.cat]||[]).push(it)});
+  Object.values(g).forEach(a=>a.sort((x,y)=>x.n.localeCompare(y.n,'ru')));
+  return {g,from,to};
+}
+function fqShop(q,u){if(u==='г'||u==='мл'){if(q>=1000)return dec(q/1000)+(u==='г'?' кг':' л');return Math.ceil(q/10)*10+' '+u}if(u==='шт')return Math.ceil(q)+' шт';return Math.ceil(q)+' '+u}
+function renderShop(){
+  const box=$('#shopBox');const pl=S.plan;
+  if(!pl){box.innerHTML=`<div class="card empty"><div class="big">🛒</div><h3>Список появится вместе с планом</h3><a class="btn btn-primary" href="#wizard" data-start>Составить план</a></div>`;return}
+  const w=clamp(S.shopW||0,0,4);const {g,from,to}=shopList(w);const order=['v','f','m','r','e','b','n','o'];
+  const total=Object.values(g).reduce((a,x)=>a+x.length,0);const done=Object.values(g).flat().filter(it=>S.shop[w+'|'+it.n]).length;
+  box.innerHTML=`<div class="tabs" role="tablist">${[0,1,2,3,4].map(i=>`<button type="button" role="tab" aria-selected="${i===w}" data-shopw="${i}">Неделя ${i+1}</button>`).join('')}</div>
+    <div class="shop-bar"><span class="muted">Дни ${from+1}–${to} · на ${S.prefs.servings} чел. · куплено ${done} из ${total}</span>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-ghost btn-sm" type="button" data-act="share">📤 Поделиться</button><button class="btn btn-ghost btn-sm" type="button" data-act="print">⬇ PDF</button></div></div>
+    <div class="shop-grid">${order.filter(c=>g[c]).map(c=>`<div class="card shop-cat"><h4>${CAT[c]}<span class="muted small">${g[c].length}</span></h4><ul>${g[c].map(it=>`<li><label><input type="checkbox" data-shop="${w}|${esc(it.n)}" ${S.shop[w+'|'+it.n]?'checked':''}><span>${esc(it.n)}</span><span class="q">${fqShop(it.q,it.u)}</span></label></li>`).join('')}</ul></div>`).join('')}</div>`;
+}
+function shopText(){const w=S.shopW||0;const {g,from,to}=shopList(w);let s=`Цветочная форма — покупки, неделя ${w+1} (дни ${from+1}–${to})\n`;Object.keys(g).forEach(c=>{s+=`\n${CAT[c]}:\n`+g[c].map(it=>`• ${it.n} — ${fqShop(it.q,it.u)}`).join('\n')});return s}
+
+/* ---------- progress ---------- */
+function renderProgress(){
+  const box=$('#progBox');const c=calc();const W=[...S.weights].sort((a,b)=>a.d<b.d?-1:1);
+  const goal=S.plan?S.plan.goalW:c.goalW;const start=W.length?W[0].w:S.profile.weight;const cur=W.length?W[W.length-1].w:S.profile.weight;
+  const hm=S.profile.height/100;
+  box.innerHTML=`<div class="prog-grid"><div class="card"><h4 style="font-family:var(--sans)">Добавить взвешивание</h4>
+    <form class="w-form" id="wForm"><div class="field"><label for="wDate">Дата</label><input type="date" id="wDate" value="${todayISO()}" max="${todayISO()}" required></div>
+    <div class="field"><label for="wVal">Вес, кг</label><input type="number" id="wVal" min="40" max="200" step="0.1" value="${cur}" required inputmode="decimal"></div><button class="btn btn-primary" type="submit">Сохранить</button></form>
+    <div class="stats4"><div class="stat"><span>Старт</span><b>${dec(start)}</b><small>кг</small></div><div class="stat"><span>Сейчас</span><b>${dec(cur)}</b><small>ИМТ ${dec(cur/(hm*hm))}</small></div>
+    <div class="stat"><span>Сброшено</span><b>${cur<=start?'−':'+'}${dec(Math.abs(start-cur))}</b><small>кг</small></div><div class="stat"><span>Осталось до цели</span><b>${dec(Math.max(0,cur-goal))}</b><small>цель ${dec(goal)} кг</small></div></div>
+    <ul class="wlog">${W.slice().reverse().slice(0,12).map(x=>`<li><span>${dShort(addDays(x.d,0))}</span><b>${dec(x.w)} кг</b><button type="button" data-wdel="${x.d}" aria-label="Удалить запись ${x.d}">✕</button></li>`).join('')}</ul></div>
+    <div class="card chart"><h4 style="font-family:var(--sans)">Динамика веса</h4>${weightChart(W,goal)}</div></div>`;
+}
+function weightChart(W,goal){
+  if(!W.length)return '<p class="muted">Добавьте первое взвешивание — здесь появится график.</p>';
+  const vals=W.map(x=>x.w).concat(goal);const min=Math.floor(Math.min(...vals)-1),max=Math.ceil(Math.max(...vals)+1);
+  const w=640,h=280,pl=44,pr=16,pt=16,pb=32;const ts=s=>addDays(s,0).getTime();
+  const t0=ts(W[0].d),t1=Math.max(ts(W[W.length-1].d),t0+14*864e5);
+  const x=t=>pl+(t-t0)/(t1-t0)*(w-pl-pr),y=v=>pt+(max-v)/(max-min)*(h-pt-pb);
+  let g='';const steps=4;for(let i=0;i<=steps;i++){const v=min+(max-min)*i/steps;g+=`<line x1="${pl}" x2="${w-pr}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${pl-8}" y="${y(v)+4}" text-anchor="end">${dec(v)}</text>`}
+  const path=W.map((p,i)=>(i?'L':'M')+x(ts(p.d)).toFixed(1)+' '+y(p.w).toFixed(1)).join(' ');
+  const area=path+` L${x(ts(W[W.length-1].d)).toFixed(1)} ${h-pb} L${x(t0).toFixed(1)} ${h-pb} Z`;
+  return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="График веса: от ${dec(W[0].w)} до ${dec(W[W.length-1].w)} кг, цель ${dec(goal)} кг">${g}
+    <line x1="${pl}" x2="${w-pr}" y1="${y(goal)}" y2="${y(goal)}" stroke="var(--green)" stroke-width="2" stroke-dasharray="6 5"/><text x="${w-pr}" y="${y(goal)-6}" text-anchor="end" style="fill:var(--green);font-weight:600">цель ${dec(goal)} кг</text>
+    <path d="${area}" fill="var(--blue)" opacity=".12"/><path d="${path}" fill="none" stroke="var(--blue)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    ${W.map(p=>`<circle cx="${x(ts(p.d))}" cy="${y(p.w)}" r="5" fill="var(--surface)" stroke="var(--blue)" stroke-width="2.5"><title>${dShort(addDays(p.d,0))}: ${dec(p.w)} кг</title></circle>`).join('')}
+    <text x="${pl}" y="${h-8}">${dShort(new Date(t0))}</text><text x="${w-pr}" y="${h-8}" text-anchor="end">${dShort(new Date(t1))}</text></svg>`;
+}
+
+/* ---------- print ---------- */
+function doPrint(){
+  const pl=S.plan;if(!pl)return;
+  let h=`<h1>Цветочная форма — план на 30 дней</h1><p>Цель: ${fmt(pl.kcal)} ккал/день · Б ${pl.prot} г · Ж ${pl.fat} г · У ${pl.carb} г · ${esc(dietName(pl.dk))}${pl.fasting!=='off'?' + '+(pl.fasting==='16'?'16/8':'14/10'):''}</p>
+  <table><tr><th>День</th><th>Меню</th><th>Ккал</th></tr>${pl.days.map((day,d)=>`<tr><td>${d+1}<br>${dShort(addDays(pl.start,d))}</td><td>${day.meals.map(m=>m.id?`${toHM(m.t)} ${SLOTN[m.s]}: ${esc(RX[m.id].t)} (${portionG(RX[m.id],m.f)} г)`:'').join('<br>')}</td><td>${fmt(dayTotals(d).kcal)}</td></tr>`).join('')}</table>`;
+  const v=vitamins(S.sel);
+  h+=`<h2 class="pb">Витамины (день ${S.sel+1})</h2>`+(v.blocked?'<p>Персональный график не формируется — обратитесь к врачу.</p>':`<table><tr><th>Время</th><th>Добавка</th><th>Доза</th><th>Как</th></tr>${v.items.filter(i=>i.on).map(i=>`<tr><td>${toHM(i.t)}</td><td>${esc(i.n)}</td><td>${esc(i.dose)}</td><td>${esc(i.food)}</td></tr>`).join('')}</table>`);
+  const {g,from,to}=shopList(S.shopW||0);
+  h+=`<h2>Покупки: неделя ${(S.shopW||0)+1} (дни ${from+1}–${to})</h2><table>${Object.keys(g).map(c=>`<tr><th colspan="2">${CAT[c]}</th></tr>`+g[c].map(it=>`<tr><td>☐ ${esc(it.n)}</td><td>${fqShop(it.q,it.u)}</td></tr>`).join('')).join('')}</table>
+  <p><small>Сайт носит информационный характер и не заменяет консультацию врача.</small></p>`;
+  $('#printArea').innerHTML=h;window.print();
+}
+
+/* ---------- misc UI ---------- */
+function renderFAQ(){$('#faqBox').innerHTML=FAQ.map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join('')}
+function renderAll(){renderDiets();renderWizard();renderPlan();renderRecipes();renderVitamins();renderShop();renderProgress()}
+function initFilters(){
+  $('#rDiet').innerHTML='<option value="">Все диеты</option><option value="K">Кето</option><option value="L">Low-carb</option><option value="M">Средиземноморская</option><option value="H">Высокобелковая</option><option value="D">DASH</option><option value="veg">Вегетарианская</option>';
+  $('#rCuisine').innerHTML='<option value="">Любая кухня</option>'+Object.entries(CUIS).map(([k,v])=>`<option value="${k}">${v}</option>`).join('');
+  ['#rSearch','#rDiet','#rMeal','#rTime','#rCuisine'].forEach(s=>$(s).addEventListener('input',()=>{recLimit=12;renderRecipes()}));
+  ['#rFav','#rMine'].forEach(s=>$(s).addEventListener('click',e=>{const b=e.currentTarget;b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')!=='true');recLimit=12;renderRecipes()}));
+  $('#rMore').addEventListener('click',()=>{recLimit+=12;renderRecipes()});
+}
+function applyTheme(){let t=null;try{t=localStorage.getItem('cvetform_theme')}catch(e){}if(t)document.documentElement.setAttribute('data-theme',t);else document.documentElement.removeAttribute('data-theme')}
+
+/* ---------- events ---------- */
+document.addEventListener('click',async e=>{
+  const t=e.target;let el;
+  if((el=t.closest('[data-start]'))){S.step=S.step||1;setTimeout(()=>renderWizard(),0)}
+  if((el=t.closest('[data-more]'))){e.stopPropagation();openDiet(el.dataset.more);return}
+  if((el=t.closest('[data-kv]'))){const v=el.dataset.kv;if(hasHealth()){toast('🔒 Кето недоступна при противопоказаниях');return}S.prefs.keto=v;S.prefs.diet='keto';S.prefs.auto=false;markDirty();renderDiets();renderPlanDirty();
+    if(el.closest('#modal')){$$('#modal [data-kv]').forEach(b=>b.setAttribute('aria-checked',b.dataset.kv===v))}toast('Вариант кето: '+KETO_V[v].n);return}
+  if((el=t.closest('[data-choose]'))){selectDiet(el.dataset.choose);closeModal();return}
+  if((el=t.closest('.diet-card[data-diet]'))){if(el.classList.contains('locked')){toast('🔒 Кето недоступна: в анкете отмечены противопоказания. Безопаснее выбрать DASH или средиземноморскую диету.');return}selectDiet(el.dataset.diet);return}
+  if((el=t.closest('[data-fast]'))){if(hasHealth()&&el.dataset.fast!=='off'){toast('🔒 Интервальное голодание недоступно при отмеченных противопоказаниях');return}S.prefs.fasting=el.dataset.fast;markDirty();renderDiets();renderPlanDirty();return}
+  if((el=t.closest('[data-fav]'))){e.stopPropagation();toggleFav(el.dataset.fav);return}
+  if((el=t.closest('[data-recipe]'))){openRecipe(el.dataset.recipe,+(el.dataset.f||1));return}
+  if((el=t.closest('[data-day]'))){S.sel=+el.dataset.day;save();$$('.cal-day').forEach(b=>{const on=+b.dataset.day===S.sel;b.classList.toggle('on',on);b.setAttribute('aria-selected',on)});renderDay();renderVitamins();return}
+  if((el=t.closest('[data-nav]'))){S.sel=clamp(S.sel+ +el.dataset.nav,0,29);save();renderPlan();renderVitamins();return}
+  if((el=t.closest('[data-eat]'))){const k=el.dataset.eat;S.eaten[k]=!S.eaten[k];if(!S.eaten[k])delete S.eaten[k];save();renderPlan();return}
+  if((el=t.closest('[data-swap]'))){const [d,i]=el.dataset.swap.split('-').map(Number);openSwap(d,i);return}
+  if((el=t.closest('[data-pick]'))){const [d,i,...rest]=el.dataset.pick.split('-');const f=+rest.pop();const id=rest.join('-');const m=S.plan.days[+d].meals[+i];m.id=id;m.f=f;save();closeModal();renderPlan();renderShop();renderVitamins();toast('Блюдо заменено');return}
+  if((el=t.closest('[data-water]'))){const n=+el.dataset.water;S.water[S.sel]=S.water[S.sel]===n?n-1:n;save();renderDay();return}
+  if((el=t.closest('[data-vtoggle]'))){const id=el.dataset.vtoggle;const optional=id==='fe';if(optional){const i=S.vitOn.indexOf(id);i>=0?S.vitOn.splice(i,1):S.vitOn.push(id)}else{const i=S.vitOff.indexOf(id);i>=0?S.vitOff.splice(i,1):S.vitOff.push(id)}save();renderVitamins();renderDay();return}
+  if((el=t.closest('[data-vdel]'))){S.vitCustom.splice(+el.dataset.vdel,1);save();renderVitamins();renderDay();return}
+  if((el=t.closest('[data-shopw]'))){S.shopW=+el.dataset.shopw;save();renderShop();return}
+  if((el=t.closest('[data-wdel]'))){S.weights=S.weights.filter(x=>x.d!==el.dataset.wdel);save();renderProgress();return}
+  if((el=t.closest('[data-act]'))){const a=el.dataset.act;
+    if(a==='regen'){generatePlan();renderAll();toast('План пересчитан 🌸')}
+    else if(a==='week'){generatePlan(Math.floor(S.sel/7))}
+    else if(a==='next'){const W=[...S.weights].sort((a,b)=>a.d<b.d?-1:1);const lw=W.length?W[W.length-1].w:S.profile.weight;const goal=S.plan.goalW;S.profile.weight=lw;S.profile.kg=Math.max(0,Math.round((lw-goal)*2)/2);
+      if(S.profile.kg<1&&S.profile.goal!=='maintain'){S.phase='maintenance';S.profile.kg=Math.max(1,S.profile.kg)}generatePlan();renderAll();toast('Новый месяц рассчитан по текущему весу '+dec(lw)+' кг')}
+    else if(a==='ketoexit'){S.phase='keto_exit';generatePlan();renderAll();toast('План выхода из кето: 1 неделя low-carb, затем средиземноморская')}
+    else if(a==='maint'){S.phase='maintenance';generatePlan();renderAll();toast('Фаза удержания включена')}
+    else if(a==='print'){doPrint()}
+    else if(a==='share'){const txt=shopText();try{if(navigator.share){await navigator.share({title:'Список покупок',text:txt})}else{await navigator.clipboard.writeText(txt);toast('Список скопирован в буфер обмена')}}catch(err){try{await navigator.clipboard.writeText(txt);toast('Список скопирован в буфер обмена')}catch(e2){toast('Не удалось поделиться списком')}}}
+    return}
+});
+document.addEventListener('change',e=>{
+  const t=e.target;
+  if(t.dataset.take){S.taken[t.dataset.take]=t.checked;if(!t.checked)delete S.taken[t.dataset.take];save();if(t.closest('#vitBox'))renderVitamins();else{const cb=$(`#vitBox [data-take="${t.dataset.take}"]`);if(cb){renderVitamins()}}return}
+  if(t.dataset.shop){S.shop[t.dataset.shop]=t.checked;if(!t.checked)delete S.shop[t.dataset.shop];save();renderShop();return}
+});
+document.addEventListener('submit',e=>{
+  if(e.target.id==='wForm'){e.preventDefault();const d=$('#wDate').value,w=parseFloat(String($('#wVal').value).replace(',','.'));if(!d||isNaN(w)||w<40||w>200){toast('Введите вес от 40 до 200 кг');return}
+    S.weights=S.weights.filter(x=>x.d!==d);S.weights.push({d,w:r1(w)});save();renderProgress();renderPlan();toast('Вес сохранён')}
+  if(e.target.id==='customForm'){e.preventDefault();const n=$('#cvN').value.trim(),dose=$('#cvD').value.trim(),tt=$('#cvT').value;if(!n||!dose||!tt)return;S.vitCustom.push({n,dose,t:tt});save();renderVitamins();renderDay();toast('Добавка добавлена в график')}
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&$('#modalBack').classList.contains('open'))closeModal();
+  const c=e.target.closest&&e.target.closest('.diet-card');
+  if(c&&e.target===c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();c.click()}
+  if(c&&e.target===c&&(e.key==='ArrowRight'||e.key==='ArrowLeft')){const all=$$('.diet-card',c.parentElement);const i=all.indexOf(c)+(e.key==='ArrowRight'?1:-1);if(all[i]){all[i].focus()}}
+});
+$('#mClose').addEventListener('click',closeModal);
+$('#modalBack').addEventListener('click',e=>{if(e.target.id==='modalBack')closeModal()});
+$('#wPrev').addEventListener('click',()=>goStep(S.step-1));
+$('#wNext').addEventListener('click',()=>{
+  if(S.step<4){goStep(S.step+1);return}
+  if(!validStep1()){goStep(1);return}
+  const t0=performance.now();generatePlan();renderAll();const ms=Math.round(performance.now()-t0);
+  confetti();toast(`План на 30 дней готов 🌸 (${ms} мс)`);setTimeout(()=>$('#plan').scrollIntoView({behavior:reduceMotion?'auto':'smooth'}),150);
+});
+$('#wSteps').addEventListener('click',e=>{const b=e.target.closest('[data-step]');if(b)goStep(+b.dataset.step)});
+$('#freeExcl').addEventListener('input',e=>{S.prefs.freeExcl=e.target.value;markDirty();renderPlanDirty()});
+$('#wake').addEventListener('change',e=>{S.prefs.wake=e.target.value||'07:00';markDirty();renderPlanDirty()});
+$('#sleep').addEventListener('change',e=>{S.prefs.sleep=e.target.value||'23:00';markDirty();renderPlanDirty()});
+$('#burger').addEventListener('click',()=>{const n=$('#nav');const o=n.classList.toggle('open');$('#burger').setAttribute('aria-expanded',o);$('#burger').textContent=o?'✕':'☰'});
+$$('#nav a').forEach(a=>a.addEventListener('click',()=>{$('#nav').classList.remove('open');$('#burger').setAttribute('aria-expanded','false');$('#burger').textContent='☰'}));
+$('#themeBtn').addEventListener('click',()=>{const cur=document.documentElement.getAttribute('data-theme');const dark=cur?cur==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;const next=dark?'light':'dark';try{localStorage.setItem('cvetform_theme',next)}catch(e){}applyTheme()});
+$('#loginBtn').addEventListener('click',()=>openModal(`<div class="m-body"><h2 id="mTitle">Сохранение плана</h2>
+  <p>Сейчас вы в <b>гостевом режиме</b>: анкета, план, отметки и вес сохраняются в этом браузере автоматически.</p>
+  <div class="note blue">Вход по email (magic link) или через Google и синхронизация между телефоном и компьютером появятся после подключения облачного бэкенда. При входе гостевые данные будут перенесены в аккаунт.</div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px"><button class="btn btn-primary" type="button" disabled>Войти по email — скоро</button><button class="btn btn-ghost" type="button" disabled>Войти через Google — скоро</button></div>
+  <p class="small muted" style="margin-top:16px">Чтобы установить сайт на телефон: откройте меню браузера → «Добавить на главный экран».</p></div>`));
+$('#privacyBtn').addEventListener('click',()=>openModal(`<div class="m-body"><h2 id="mTitle">Политика конфиденциальности</h2><p>В этой версии все данные (параметры, отметки о здоровье, план, вес) хранятся только в вашем браузере и никуда не отправляются.</p><p>При подключении аккаунта данные о здоровье будут храниться только в вашем аккаунте с разграничением доступа, в соответствии с Законом РК «О персональных данных и их защите». Вы можете удалить данные в любой момент.</p></div>`));
+$('#wipeBtn').addEventListener('click',()=>{if(confirm('Удалить все ваши данные с этого устройства? Действие нельзя отменить.')){try{localStorage.removeItem(KEY)}catch(e){}location.reload()}});
+
+/* ---------- init ---------- */
+applyTheme();
+bindNum('age','age',18,65);bindNum('height','height',140,200);bindNum('weight','weight',40,200);
+bindNum('kg','kg',1,()=>Math.max(1,calc().maxLose));bindNum('goalW','goalW',()=>calc().minW,()=>S.profile.weight-1);
+initFilters();renderFAQ();renderAll();
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{threshold:.12});
+  $$('.reveal:not(.in)').forEach(el=>io.observe(el));
+  const links=$$('.nav a, .tabbar a');
+  const so=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){const id='#'+en.target.id;links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')===id))}}),{rootMargin:'-45% 0px -50% 0px'});
+  ['diets','wizard','plan','recipes','vitamins','shop','progress','faq'].forEach(id=>so.observe(document.getElementById(id)));
+}else $$('.reveal').forEach(el=>el.classList.add('in'));
+</script>
+</body>
+</html>
